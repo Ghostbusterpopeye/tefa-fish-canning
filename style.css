@@ -443,6 +443,7 @@ h2.page-title {
 }
 
 /* === KONTAK === */
+/* === KONTAK === */
 .kontak-container {
   display: flex;
   gap: 40px;
@@ -459,17 +460,73 @@ h2.page-title {
   margin: 20px 0 10px;
 }
 
+/* === KONTAK - MAPS TERKUNCI === */
 .map-container {
   height: 450px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .map-container iframe {
   width: 100%;
   height: 100%;
   border: none;
+  pointer-events: none; /* Mencegah interaksi pengguna */
+}
+
+/* Overlay untuk tetap bisa klik link ke Google Maps */
+.map-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.map-container:hover::after {
+  background: rgba(179, 16, 17, 0.05); /* Efek hover dengan warna merah transparan */
+}
+
+/* Teks petunjuk */
+.map-container::before {
+  content: 'Klik untuk membuka di Google Maps';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.map-container:hover::before {
+  opacity: 1;
+}
+
+/* Link yang membuka maps di tab baru */
+.map-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: block;
 }
 
 /* === FOOTER === */
