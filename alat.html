@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="webtoken" content="width=device-width, initial-scale=1.0">
+  <title>Alat-Alat Produksi - TEFA Pengalengan Ikan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_proses.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Logotefa.png" alt="Logo TEFA">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li class="dropdown">
+          <a href="produk.html">PRODUK KAMI</a>
+          <div class="dropdown-content">
+            <a href="produk.html">Detail Produk</a>
+            <a href="informasi.html">Informasi Keamanan</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="tahapan.html" class="active">PROSES PEMBUATAN</a>
+          <div class="dropdown-content">
+            <a href="tahapan.html">Tahapan</a>
+            <a href="alat.html" class="active">Alat-Alat</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="berita.html">BERITA</a>
+          <div class="dropdown-content">
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="inovasi.html">Inovasi</a>
+            <a href="pencapaian.html">Pencapaian</a>
+          </div>
+        </li>
+        <li><a href="kontak.html">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Alat-Alat Produksi</h1>
+
+      <div class="news-nav">
+        <a href="tahapan.html" class="news-nav-item">
+          <i class="fas fa-list-ol"></i> Tahapan
+        </a>
+        <a href="alat.html" class="news-nav-item active">
+          <i class="fas fa-tools"></i> Alat-Alat
+        </a>
+      </div>
+
+      <section id="alat-list" class="news-section active">
+        <div class="news-grid">
+          <div class="news-item" onclick="showDetail('a1')">
+            <div class="news-image">
+              <img src="foto alat penutup kaleng.jpg" alt="Mesin Penutup Kaleng">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
+              <h3 class="news-title">Mesin Penutup Kaleng</h3>
+              <p class="news-summary">Menutup kaleng secara rapat dan kedap udara.</p>
+              <div class="news-date">Alat #1</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('a2')">
+            <div class="news-image">
+              <img src="foto alat sterilisasi.jpg" alt="Mesin Retort">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
+              <h3 class="news-title">Mesin Retort</h3>
+              <p class="news-summary">Sterilisasi kaleng pada suhu tinggi untuk membunuh mikroorganisme.</p>
+              <div class="news-date">Alat #2</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('a3')">
+            <div class="news-image">
+              <img src="foto alat pencuci ikan.jpg" alt="Mesin Pencuci Ikan">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
+              <h3 class="news-title">Mesin Pencuci Ikan</h3>
+              <p class="news-summary">Membersihkan ikan dari kotoran, lender, dan darah.</p>
+              <div class="news-date">Alat #3</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('a4')">
+            <div class="news-image">
+              <img src="foto alat peniris ikan.jpg" alt="Mesin Peniris Ikan">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
+              <h3 class="news-title">Mesin Peniris Ikan</h3>
+              <p class="news-summary">Mengurangi kadar air berlebih agar ikan lebih kering.</p>
+              <div class="news-date">Alat #4</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="detail-alat" class="news-section">
+        <div class="berita-detail">
+          <h2 id="detail-title" class="page-title">Judul Alat</h2>
+          <div class="meta" id="detail-meta">ID: | Kategori: Alat Produksi</div>
+          <img id="detail-image" src="" alt="Gambar Alat" class="img-fluid">
+          <div class="content" id="detail-content"></div>
+          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
+            <i class="fas fa-arrow-left"></i> Kembali ke Alat-Alat
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <img src="logopolije.png" alt="Logo 1">
+          <img src="Logosip.png" alt="Logo 2">
+          <img src="Logotefa.png" alt="Logo 3">
+        </div>
+        <span class="footer-text">Tefa Pengalengan Ikan</span>
+      </div>
+      <div class="footer-menu">
+        <div class="footer-menu-column">
+          <h4>Alamat</h4>
+          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Tentang kami</h4>
+          <a href="tentang.html">Sejarah</a>
+          <a href="tentang.html">Visi misi</a>
+          <a href="tentang.html">Tentang Sarden</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Produk Kami</h4>
+          <a href="produk.html">Detail produk</a>
+          <a href="informasi.html">Informasi keamanan produk</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Proses pembuatan</h4>
+          <a href="tahapan.html">Tahapan</a>
+          <a href="alat.html">Alat alat</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Berita</h4>
+          <a href="kegiatan.html">Kegiatan</a>
+          <a href="inovasi.html">Inovasi</a>
+          <a href="pencapaian.html">Pencapaian</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Kontak</h4>
+          <a href="kontak.html">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h3>Smart, Innovative, Professional</h3>
+    </div>
+  </footer>
+
+  <script>
+    const alatData = {
+      a1: {
+        title: "Mesin Penutup Kaleng",
+        id: "1",
+        image: "foto alat penutup kaleng.jpg",
+        content: `<p>Berfungsi menutup kaleng secara rapat dan kedap udara sehingga isi terlindungi dari kontaminasi.</p><p>Proses ini kritis agar produk tidak rusak selama sterilisasi atau penyimpanan.</p>`
+      },
+      a2: {
+        title: "Mesin Retort",
+        id: "2",
+        image: "foto alat sterilisasi.jpg",
+        content: `<p>Memastikan sterilisasi komersial dengan pemanasan 115–121°C selama 60–90 menit.</p><p>Membunuh semua bakteri berbahaya termasuk <em>Clostridium botulinum</em>.</p>`
+      },
+      a3: {
+        title: "Mesin Pencuci Ikan",
+        id: "3",
+        image: "foto alat pencuci ikan.jpg",
+        content: `<p>Membersihkan ikan dari kotoran, lendir, dan darah menggunakan air mengalir dan sikat putar lembut.</p><p>Menjamin higienitas bahan baku dan mengurangi bau amis.</p>`
+      },
+      a4: {
+        title: "Mesin Peniris Ikan",
+        id: "4",
+        image: "foto alat peniris ikan.jpg",
+        content: `<p>Mengurangi kadar air berlebih setelah pencucian menggunakan sistem putaran atau rak berlubang.</p><p>Memastikan rasio ikan-saus dalam kaleng tetap optimal.</p>`
+      }
+    };
+
+    function showDetail(id) {
+      const data = alatData[id];
+      if (!data) return;
+      
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-meta').textContent = `ID: ${data.id} | Kategori: Alat Produksi`;
+      document.getElementById('detail-image').src = data.image;
+      document.getElementById('detail-content').innerHTML = data.content;
+      
+      document.getElementById('alat-list').classList.remove('active');
+      document.getElementById('detail-alat').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function hideDetail() {
+      document.getElementById('detail-alat').classList.remove('active');
+      document.getElementById('alat-list').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

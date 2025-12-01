@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahapan Proses Pembuatan - TEFA Pengalengan Ikan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_proses.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Logotefa.png" alt="Logo TEFA">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li class="dropdown">
+          <a href="produk.html">PRODUK KAMI</a>
+          <div class="dropdown-content">
+            <a href="produk.html">Detail Produk</a>
+            <a href="informasi.html">Informasi Keamanan</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="tahapan.html" class="active">PROSES PEMBUATAN</a>
+          <div class="dropdown-content">
+            <a href="tahapan.html" class="active">Tahapan</a>
+            <a href="alat.html">Alat-Alat</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="berita.html">BERITA</a>
+          <div class="dropdown-content">
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="inovasi.html">Inovasi</a>
+            <a href="pencapaian.html">Pencapaian</a>
+          </div>
+        </li>
+        <li><a href="kontak.html">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <div class="container">
+      <h1 class="page-title">Tahapan Proses Pembuatan</h1>
+
+      <!-- Navigasi antar sub-halaman -->
+      <div class="news-nav">
+        <a href="tahapan.html" class="news-nav-item active">
+          <i class="fas fa-list-ol"></i> Tahapan
+        </a>
+        <a href="alat.html" class="news-nav-item">
+          <i class="fas fa-tools"></i> Alat-Alat
+        </a>
+      </div>
+
+      <!-- Daftar Tahapan -->
+      <section id="tahapan-list" class="news-section active">
+        <div class="news-grid">
+          <div class="news-item" onclick="showDetail('t1')">
+            <div class="news-image">
+              <img src="Praktik Pengalengan.jpg" alt="Penyortiran Ikan">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
+              <h3 class="news-title">Penyortiran Ikan</h3>
+              <p class="news-summary">Ikan lemuru segar dipilih berdasarkan ukuran dan kualitas.</p>
+              <div class="news-date">Tahap 1</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('t2')">
+            <div class="news-image">
+              <img src="produkmahasiswa.jpg" alt="Pengisian Kaleng">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
+              <h3 class="news-title">Pengisian Kaleng</h3>
+              <p class="news-summary">Ikan dimasukkan ke dalam kaleng food-grade secara manual.</p>
+              <div class="news-date">Tahap 2</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('t3')">
+            <div class="news-image">
+              <img src="foto tahapan pemberian saus.jpg" alt="Pemberian Saus">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
+              <h3 class="news-title">Pemberian Saus</h3>
+              <p class="news-summary">Saus tomat, cabai, atau larutan garam ditambahkan sesuai jenis produk.</p>
+              <div class="news-date">Tahap 3</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('t4')">
+            <div class="news-image">
+              <img src="proseskrusial.jpg" alt="Sterilisasi">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
+              <h3 class="news-title">Sterilisasi (Retorting)</h3>
+              <p class="news-summary">Kaleng dipanaskan pada suhu tinggi untuk sterilisasi komersial.</p>
+              <div class="news-date">Tahap 4</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detail Tahapan (sembunyi secara default) -->
+      <section id="detail-tahapan" class="news-section">
+        <div class="berita-detail">
+          <h2 id="detail-title" class="page-title">Judul Tahapan</h2>
+          <div class="meta" id="detail-meta">Tahap: | Kategori: Tahapan</div>
+          <img id="detail-image" src="" alt="Gambar Tahapan" class="img-fluid">
+          <div class="content" id="detail-content"></div>
+          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
+            <i class="fas fa-arrow-left"></i> Kembali ke Tahapan
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <img src="logopolije.png" alt="Logo 1">
+          <img src="Logosip.png" alt="Logo 2">
+          <img src="Logotefa.png" alt="Logo 3">
+        </div>
+        <span class="footer-text">Tefa Pengalengan Ikan</span>
+      </div>
+      <div class="footer-menu">
+        <div class="footer-menu-column">
+          <h4>Alamat</h4>
+          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Tentang kami</h4>
+          <a href="tentang.html">Sejarah</a>
+          <a href="tentang.html">Visi misi</a>
+          <a href="tentang.html">Tentang Sarden</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Produk Kami</h4>
+          <a href="produk.html">Detail produk</a>
+          <a href="informasi.html">Informasi keamanan produk</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Proses pembuatan</h4>
+          <a href="tahapan.html">Tahapan</a>
+          <a href="alat.html">Alat alat</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Berita</h4>
+          <a href="kegiatan.html">Kegiatan</a>
+          <a href="inovasi.html">Inovasi</a>
+          <a href="pencapaian.html">Pencapaian</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Kontak</h4>
+          <a href="kontak.html">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h3>Smart, Innovative, Professional</h3>
+    </div>
+  </footer>
+
+  <!-- JavaScript Interaktif -->
+  <script>
+    const tahapanData = {
+      t1: {
+        title: "Penyortiran Ikan",
+        stage: "1",
+        image: "Praktik Pengalengan.jpg",
+        content: `<p>Ikan lemuru segar diterima dari nelayan dan langsung dipilih berdasarkan ukuran, kesegaran, dan kondisi fisik. Proses ini memastikan konsistensi kualitas produk akhir.</p><p>Ikan yang lolos seleksi dicuci bersih dan disiapkan untuk tahap pengalengan.</p>`
+      },
+      t2: {
+        title: "Pengisian Kaleng",
+        stage: "2",
+        image: "produkmahasiswa.jpg",
+        content: `<p>Ikan dimasukkan ke dalam kaleng baja food-grade secara manual oleh mahasiswa. Kapasitas disesuaikan dengan standar berat bersih 425 gram.</p><p>Setiap kaleng diperiksa untuk memastikan tidak ada kebocoran sebelum tahap selanjutnya.</p>`
+      },
+      t3: {
+        title: "Pemberian Saus",
+        stage: "3",
+        image: "foto tahpan pemberian saus",
+        content: `<p>Saus tomat, saus cabai, atau larutan garam ditambahkan sesuai jenis produk. Semua saus dibuat dari bahan alami tanpa pengawet.</p><p>Resep khas ini merupakan hasil riset mahasiswa Politeknik Negeri Jember.</p>`
+      },
+      t4: {
+        title: "Sterilisasi (Retorting)",
+        stage: "4",
+        image: "proseskrusial.jpg",
+        content: `<p>Kaleng dimasukkan ke mesin retort dan dipanaskan pada suhu 115–121°C selama 60–90 menit. Proses ini membunuh semua mikroorganisme berbahaya.</p><p>Produk menjadi aman, awet, dan siap dipasarkan tanpa perlu pendinginan.</p>`
+      }
+    };
+
+    function showDetail(id) {
+      const data = tahapanData[id];
+      if (!data) return;
+      
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-meta').textContent = `Tahap: ${data.stage} | Kategori: Tahapan`;
+      document.getElementById('detail-image').src = data.image;
+      document.getElementById('detail-content').innerHTML = data.content;
+      
+      document.getElementById('tahapan-list').classList.remove('active');
+      document.getElementById('detail-tahapan').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function hideDetail() {
+      document.getElementById('detail-tahapan').classList.remove('active');
+      document.getElementById('tahapan-list').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

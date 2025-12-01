@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pencapaian - TEFA Pengalengan Ikan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_berita.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <img src="Logotefa.png" alt="Logo TEFA">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li class="dropdown">
+          <a href="produk.html">PRODUK KAMI</a>
+          <div class="dropdown-content">
+            <a href="produk.html">Detail Produk</a>
+            <a href="informasi.html">Informasi Keamanan</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="tahapan.html">PROSES PEMBUATAN</a>
+          <div class="dropdown-content">
+            <a href="tahapan.html">Tahapan</a>
+            <a href="alat.html">Alat-Alat</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="kegiatan.html" class="active">BERITA</a>
+          <div class="dropdown-content">
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="inovasi.html">Inovasi</a>
+            <a href="pencapaian.html" class="active">Pencapaian</a>
+          </div>
+        </li>
+        <li><a href="kontak.html">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      
+      <!-- Page Title -->
+      <h1 class="page-title">Berita Pencapaian</h1>
+      
+      <!-- News Navigation -->
+      <div class="news-nav">
+        <a href="kegiatan.html">
+          <button class="news-nav-item">
+            <i class="fas fa-calendar-alt"></i>Kegiatan
+          </button>
+        </a>
+        <a href="inovasi.html">
+          <button class="news-nav-item">
+            <i class="fas fa-lightbulb"></i>Inovasi
+          </button>
+        </a>
+        <a href="pencapaian.html">
+          <button class="news-nav-item active">
+            <i class="fas fa-trophy"></i>Pencapaian
+          </button>
+        </a>
+      </div>
+
+      <!-- Section: Pencapaian -->
+      <section id="pencapaian" class="news-section active">
+        <div class="news-grid">
+          <!-- News Item 1 -->
+          <div class="news-item" onclick="showDetail('pencapaian1')">
+            <div class="news-image">
+              <img src="pencapian1.png" alt="Sertifikasi SNI">
+            </div>
+            <div class="news-content">
+              <div class="news-categories">
+                <span class="category-tag">Pencapaian</span>
+              </div>
+              <h3 class="news-title">Cetar! Dosen Polije Kembangkan Produk Surimi</h3>
+              <p class="news-summary">Dosen Polije berhasil mengembangkan produk surimi yang inovatif dan berkualitas tinggi..</p>
+              <div class="news-date">25 Januari 2024</div>
+            </div>
+          </div>
+
+          <!-- News Item 2 -->
+          <div class="news-item" onclick="showDetail('pencapaian2')">
+            <div class="news-image">
+              <img src="pencapaian2.jpg" alt="Penghargaan Inovasi">
+            </div>
+            <div class="news-content">
+              <div class="news-categories">
+                <span class="category-tag">Pencapaian</span>
+              </div>
+              <h3 class="news-title">Sarden SIP raih juara pertama lomba inovasi produk pangan nasional</h3>
+              <p class="news-summary">Prestasi membanggakan dengan meraih juara pertama dalam lomba inovasi produk pangan tingkat nasional.</p>
+              <div class="news-date">20 Januari 2024</div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Section: Detail Berita -->
+      <section id="detail-berita" class="news-section">
+        <div class="berita-detail">
+          <h2 id="detail-title" class="page-title">Judul Berita</h2>
+          <div class="meta text-muted mb-3" id="detail-meta">Tanggal: | Kategori: </div>
+          <img id="detail-image" src="" alt="Gambar Berita" class="img-fluid rounded mb-4">
+          <div class="content mb-4" id="detail-content">
+            <!-- Konten berita akan diisi oleh JavaScript -->
+          </div>
+          <button class="btn btn-danger" onclick="hideDetail()">
+            <i class="fas fa-arrow-left"></i>Kembali ke Berita
+          </button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <img src="logopolije.png" alt="Logo 1">
+          <img src="Logosip.png" alt="Logo 2">
+          <img src="Logotefa.png" alt="Logo 3">
+        </div>
+        <span class="footer-text">Tefa Pengalengan Ikan</span>
+      </div>
+      <div class="footer-menu">
+        <div class="footer-menu-column">
+          <h4>Alamat</h4>
+          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Tentang kami</h4>
+          <a href="tentang.html">Sejarah</a>
+          <a href="tentang.html">Visi misi</a>
+          <a href="tentang.html">Tentang Sarden</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Produk Kami</h4>
+          <a href="produk.html">Detail produk</a>
+          <a href="informasi.html">Informasi keamanan produk</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Proses pembuatan</h4>
+          <a href="tahapan.html">Tahapan</a>
+          <a href="alat.html">Alat alat</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Berita</h4>
+          <a href="kegiatan.html">Kegiatan</a>
+          <a href="inovasi.html">Inovasi</a>
+          <a href="pencapaian.html">Pencapaian</a>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Kontak</h4>
+          <a href="kontak.html">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h3>Smart, Innovative, Professional</h3>
+    </div>
+  </footer>
+  
+  <script>
+    // Data berita pencapaian
+    const beritaData = {
+      'pencapaian1': {
+        title: 'Cetar! Dosen Polije Kembangkan Produk Surimi',
+        category: 'Pencapaian',
+        date: '25 Januari 2024',
+        image: 'pencapian1.png',
+        content: `
+          <p>TEFA Jember - Dosen dan tim peneliti dari Politeknik Negeri Jember (Polije) berhasil mengembangkan produk surimi (lumatan daging ikan beku) yang inovatif dan berkualitas tinggi. Inisiatif ini merupakan bagian dari upaya Polije untuk meningkatkan nilai tambah produk perikanan dan mendukung sektor industri pengolahan hasil laut.</p>
+          <p>Pengembangan produk ini berfokus pada inovasi proses dan formulasi untuk menghasilkan surimi dengan karakteristik mutu yang unggul. Pencapaian ini didokumentasikan dalam kegiatan yang dilakukan oleh tim dosen Polije di bawah tema pengabdian kepada masyarakat.</p>
+          <p>Keberhasilan ini diharapkan dapat menjadi kontribusi nyata Polije dalam mendorong hilirisasi produk perikanan dan menciptakan peluang bisnis baru bagi masyarakat dan industri.</p>
+          <p> Tanggal Publikasi: 15 November 2023.</p>
+        `
+      },
+      'pencapaian2': {
+        title: 'Sarden SIP raih juara pertama lomba inovasi produk pangan nasional',
+        category: 'Pencapaian',
+        date: '20 Januari 2024',
+        image: 'pencapaian2.jpg',
+        content: `
+          <p>Sarden SIP berhasil meraih juara pertama dalam Lomba Inovasi Produk Pangan Nasional yang diselenggarakan oleh Kementerian Perindustrian. Pencapaian ini membuktikan bahwa produk sarden kaleng hasil karya mahasiswa dan dosen TEFA Polije mampu bersaing di tingkat nasional.</p>
+          <p>Penilaian lomba mencakup aspek inovasi produk, kualitas dan keamanan pangan, desain kemasan, serta strategi pemasaran. Tim juri memberikan apresiasi tinggi terhadap inovasi varian rasa dan penerapan teknologi modern dalam proses produksi.</p>
+          <p>Penghargaan ini memotivasi TEFA Polije untuk terus berinovasi dan menghasilkan produk-produk pangan berkualitas yang dapat berkontribusi bagi industri pangan nasional.</p>
+        `
+      },
+      'pencapaian3': {
+        title: 'Produk sarden TEFA Polije resmi kantongi sertifikasi halal MUI',
+        category: 'Pencapaian',
+        date: '15 Januari 2024',
+        image: 'pencapaian3.jpg',
+        content: `
+          <p>Produk sarden TEFA Polije resmi mendapatkan sertifikasi halal dari Majelis Ulama Indonesia (MUI). Sertifikasi ini menjadi pencapaian penting yang memperluas jangkauan pasar produk, terutama bagi konsumen muslim yang memperhatikan status kehalalan produk.</p>
+          <p>Proses sertifikasi halal melibatkan audit terhadap seluruh bahan baku yang digunakan, proses produksi, sanitasi, dan sistem penyimpanan untuk memastikan tidak ada kontaminasi dengan bahan non-halal. TEFA Polije juga telah menyiapkan Standard Operating Procedure (SOP) khusus untuk menjaga kehalalan produk.</p>
+          <p>Dengan sertifikasi halal ini, Sarden SIP semakin dipercaya dan dapat menjangkau pasar yang lebih luas, tidak hanya di Indonesia tetapi juga berpotensi untuk pasar ekspor ke negara-negara dengan mayoritas penduduk muslim.</p>
+        `
+      },
+      'pencapaian4': {
+        title: 'Sarden SIP sukses menembus pasar retail modern di 15 kota besar',
+        category: 'Pencapaian',
+        date: '10 Januari 2024',
+        image: 'pencapaian4.jpg',
+        content: `
+          <p>Sarden SIP berhasil melakukan ekspansi pasar dengan menembus retail modern di 15 kota besar di Indonesia, termasuk Jakarta, Surabaya, Bandung, Medan, dan Makassar. Pencapaian ini menunjukkan daya saing produk yang semakin kuat di pasar nasional.</p>
+          <p>Kerja sama dengan jaringan retail modern seperti Indomaret, Alfamart, Hypermart, dan Transmart membuka akses yang lebih luas bagi konsumen untuk mendapatkan produk Sarden SIP. Respons pasar sangat positif dengan tingkat penjualan yang terus meningkat setiap bulannya.</p>
+          <p>Strategi pemasaran yang efektif, kualitas produk yang terjamin, serta harga yang kompetitif menjadi kunci sukses ekspansi ini. TEFA Polije menargetkan untuk terus memperluas jangkauan distribusi ke lebih banyak kota di seluruh Indonesia pada tahun mendatang.</p>
+        `
+      }
+    };
+
+    // Fungsi untuk menampilkan detail berita
+    function showDetail(beritaId) {
+      const berita = beritaData[beritaId];
+      
+      if (berita) {
+        document.getElementById('detail-title').textContent = berita.title;
+        document.getElementById('detail-meta').textContent = `Tanggal: ${berita.date} | Kategori: ${berita.category}`;
+        document.getElementById('detail-image').src = berita.image;
+        document.getElementById('detail-image').alt = berita.title;
+        document.getElementById('detail-content').innerHTML = berita.content;
+        
+        // Hide pencapaian section and show detail
+        document.getElementById('pencapaian').classList.remove('active');
+        document.getElementById('detail-berita').classList.add('active');
+        
+        // Scroll ke atas
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // Fungsi untuk menyembunyikan detail berita
+    function hideDetail() {
+      // Kembali ke section pencapaian
+      document.getElementById('detail-berita').classList.remove('active');
+      document.getElementById('pencapaian').classList.add('active');
+      
+      // Scroll ke atas
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

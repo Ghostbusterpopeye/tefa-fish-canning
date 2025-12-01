@@ -1,0 +1,174 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Kami - TEFA Pengalengan Ikan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_produk.css">
+</head>
+
+  <header>
+    <div class="logo">
+      <img src="Logotefa.png" alt="Logo TEFA">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li class="dropdown">
+          <a href="produk.html" class="active">PRODUK KAMI</a>
+          <div class="dropdown-content">
+            <a href="produk.html">Detail Produk</a>
+            <a href="informasi.html" class="active">Informasi Keamanan</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="tahapan.html">PROSES PEMBUATAN</a>
+          <div class="dropdown-content">
+            <a href="tahapan.html">Tahapan</a>
+            <a href="alat.html">Alat-Alat</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="berita.html">BERITA</a>
+          <div class="dropdown-content">
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="inovasi.html">Inovasi</a>
+            <a href="pencapaian.html">Pencapaian</a>
+          </div>
+        </li>
+        <li><a href="kontak.html">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Informasi Keamanan Produk</h1>
+
+      <div class="news-nav">
+        <a href="produk.html" class="news-nav-item">
+          <i class="fas fa-box"></i> Detail Produk
+        </a>
+        <a href="informasi.html" class="news-nav-item active">
+          <i class="fas fa-shield-alt"></i> Informasi Keamanan
+        </a>
+      </div>
+
+      <section id="informasi-list" class="news-section active">
+        <div class="news-grid">
+          <div class="news-item" onclick="showDetail('s1')">
+            <div class="news-image">
+              <img src="sertifikat_sni.jpg" alt="Sertifikat SNI">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
+              <h3 class="news-title">SNI 3223:2022</h3>
+              <p class="news-summary">Standar Nasional Indonesia untuk sarden dan makarel.</p>
+              <div class="news-date">Berlaku 2022–2027</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('s2')">
+            <div class="news-image">
+              <img src="SERTIFIKASI.jpg" alt="Sertifikat Halal">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
+              <h3 class="news-title">Sertifikat Halal MUI</h3>
+              <p class="news-summary">Produk aman dikonsumsi umat Muslim.</p>
+              <div class="news-date">Berlaku hingga 2026</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('s3')">
+            <div class="news-image">
+              <img src="sertifikat_haccp.jpg" alt="Sertifikat HACCP">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
+              <h3 class="news-title">HACCP</h3>
+              <p class="news-summary">Sistem jaminan keamanan pangan internasional.</p>
+              <div class="news-date">Berlaku 2023–2026</div>
+            </div>
+          </div>
+          <div class="news-item" onclick="showDetail('s4')">
+            <div class="news-image">
+              <img src="sertifikat_skp.jpg" alt="SKP">
+            </div>
+            <div class="news-content">
+              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
+              <h3 class="news-title">SKP (Surat Kelayakan Produksi)</h3>
+              <p class="news-summary">Izin resmi dari Kementerian Kelautan dan Perikanan.</p>
+              <div class="news-date">Berlaku hingga 2026</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="detail-informasi" class="news-section">
+        <div class="berita-detail">
+          <h2 id="detail-title" class="page-title">Judul Sertifikasi</h2>
+          <div class="meta" id="detail-meta">Masa Berlaku: | Kategori: Sertifikasi</div>
+          <img id="detail-image" src="" alt="Gambar Sertifikasi">
+          <div class="content" id="detail-content"></div>
+          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
+            <i class="fas fa-arrow-left"></i> Kembali ke Informasi
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer> ... </footer>
+
+  <script>
+    const informasiData = {
+      s1: {
+        title: "SNI 3223:2022",
+        validity: "2022–2027",
+        image: "sertifikat_sni.jpg",
+        content: `<p>Standar Nasional Indonesia (SNI) 3223:2022 mengatur persyaratan mutu, keamanan, dan pengemasan produk sarden dan makarel kaleng.</p><p>Produk TEFA telah melalui uji laboratorium dan audit produksi untuk memenuhi standar ini, menjamin kualitas yang konsisten dan aman untuk konsumen.</p>`
+      },
+      s2: {
+        title: "Sertifikat Halal MUI",
+        validity: "Hingga 2026",
+        image: "SERTIFIKASI.jpg",
+        content: `<p>Sertifikat Halal dikeluarkan oleh Majelis Ulama Indonesia (MUI) setelah audit menyeluruh terhadap bahan baku, proses produksi, dan sanitasi.</p><p>Produk TEFA bebas dari kontaminasi bahan non-halal dan memenuhi syariah Islam.</p>`
+      },
+      s3: {
+        title: "HACCP",
+        validity: "2023–2026",
+        image: "sertifikat_haccp.jpg",
+        content: `<p>Hazard Analysis Critical Control Point (HACCP) adalah sistem jaminan keamanan pangan internasional yang mengidentifikasi dan mengendalikan titik kritis dalam proses produksi.</p><p>Implementasi HACCP di TEFA memastikan produk aman dari bahaya biologis, kimia, dan fisik.</p>`
+      },
+      s4: {
+        title: "SKP (Surat Kelayakan Produksi)",
+        validity: "Hingga 2026",
+        image: "sertifikat_skp.jpg",
+        content: `<p>Surat Kelayakan Produksi (SKP) diterbitkan oleh UPT PMP2KP Kementerian Kelautan dan Perikanan RI.</p><p>Dokumen ini membuktikan bahwa fasilitas, peralatan, dan SDM TEFA memenuhi standar produksi pangan olahan perikanan.</p>`
+      }
+    };
+
+    function showDetail(id) {
+      const data = informasiData[id];
+      if (!data) return;
+      
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-meta').textContent = `Masa Berlaku: ${data.validity} | Kategori: Sertifikasi`;
+      document.getElementById('detail-image').src = data.image;
+      document.getElementById('detail-content').innerHTML = data.content;
+      
+      document.getElementById('informasi-list').classList.remove('active');
+      document.getElementById('detail-informasi').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function hideDetail() {
+      document.getElementById('detail-informasi').classList.remove('active');
+      document.getElementById('informasi-list').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
