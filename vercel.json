@@ -32,59 +32,8 @@
       "dest": "/index.html"
     },
     {
-      "src": "/tentang",
-      "dest": "/tentang.html"
-    },
-    {
-      "src": "/produk",
-      "dest": "/produk.html"
-    },
-    {
-      "src": "/informasi",
-      "dest": "/informasi.html"
-    },
-    {
-      "src": "/tahapan",
-      "dest": "/tahapan.html"
-    },
-    {
-      "src": "/alat",
-      "dest": "/alat.html"
-    },
-    {
-      "src": "/berita",
-      "dest": "/berita.html"
-    },
-    {
-      "src": "/kegiatan",
-      "dest": "/kegiatan.html"
-    },
-    {
-      "src": "/inovasi",
-      "dest": "/inovasi.html"
-    },
-    {
-      "src": "/pencapaian",
-      "dest": "/pencapaian.html"
-    },
-    {
-      "src": "/kontak",
-      "dest": "/kontak.html"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
+      "dest": "/$1"
     }
   ]
 }
