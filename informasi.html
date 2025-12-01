@@ -1,16 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produk Kami - TEFA Pengalengan Ikan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style_produk.css">
+  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
+  <link rel="stylesheet" href="/style_produk.css"> <!-- FIXED -->
 </head>
 
+<body> <!-- TAMBAH tag <body> yang hilang -->
   <header>
     <div class="logo">
-      <img src="Logotefa.png" alt="Logo TEFA">
+      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
     </div>
     <nav>
       <ul>
@@ -60,7 +63,7 @@
         <div class="news-grid">
           <div class="news-item" onclick="showDetail('s1')">
             <div class="news-image">
-              <img src="sertifikat_sni.jpg" alt="Sertifikat SNI">
+              <img src="/sertifikat_sni.jpg" alt="Sertifikat SNI"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
@@ -71,7 +74,7 @@
           </div>
           <div class="news-item" onclick="showDetail('s2')">
             <div class="news-image">
-              <img src="SERTIFIKASI.jpg" alt="Sertifikat Halal">
+              <img src="/SERTIFIKASI.jpg" alt="Sertifikat Halal"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
@@ -82,7 +85,7 @@
           </div>
           <div class="news-item" onclick="showDetail('s3')">
             <div class="news-image">
-              <img src="sertifikat_haccp.jpg" alt="Sertifikat HACCP">
+              <img src="/sertifikat_haccp.jpg" alt="Sertifikat HACCP"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
@@ -93,7 +96,7 @@
           </div>
           <div class="news-item" onclick="showDetail('s4')">
             <div class="news-image">
-              <img src="sertifikat_skp.jpg" alt="SKP">
+              <img src="/sertifikat_skp.jpg" alt="SKP"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
@@ -120,32 +123,48 @@
   </main>
 
   <!-- Footer -->
-  <footer> ... </footer>
+  <footer>
+    <!-- Footer content sama seperti file lainnya -->
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <img src="/logopolije.png" alt="Logo 1"> <!-- JANGAN LUPA / DI SINI JUGA -->
+          <img src="/Logosip.png" alt="Logo 2">
+          <img src="/Logotefa.png" alt="Logo 3">
+        </div>
+        <span class="footer-text">Tefa Pengalengan Ikan</span>
+      </div>
+      <!-- sisanya sama -->
+    </div>
+    <div class="footer-bottom">
+      <h3>Smart, Innovative, Professional</h3>
+    </div>
+  </footer>
 
   <script>
     const informasiData = {
       s1: {
         title: "SNI 3223:2022",
         validity: "2022–2027",
-        image: "sertifikat_sni.jpg",
+        image: "/sertifikat_sni.jpg", // FIXED
         content: `<p>Standar Nasional Indonesia (SNI) 3223:2022 mengatur persyaratan mutu, keamanan, dan pengemasan produk sarden dan makarel kaleng.</p><p>Produk TEFA telah melalui uji laboratorium dan audit produksi untuk memenuhi standar ini, menjamin kualitas yang konsisten dan aman untuk konsumen.</p>`
       },
       s2: {
         title: "Sertifikat Halal MUI",
         validity: "Hingga 2026",
-        image: "SERTIFIKASI.jpg",
+        image: "/SERTIFIKASI.jpg", // FIXED
         content: `<p>Sertifikat Halal dikeluarkan oleh Majelis Ulama Indonesia (MUI) setelah audit menyeluruh terhadap bahan baku, proses produksi, dan sanitasi.</p><p>Produk TEFA bebas dari kontaminasi bahan non-halal dan memenuhi syariah Islam.</p>`
       },
       s3: {
         title: "HACCP",
         validity: "2023–2026",
-        image: "sertifikat_haccp.jpg",
+        image: "/sertifikat_haccp.jpg", // FIXED
         content: `<p>Hazard Analysis Critical Control Point (HACCP) adalah sistem jaminan keamanan pangan internasional yang mengidentifikasi dan mengendalikan titik kritis dalam proses produksi.</p><p>Implementasi HACCP di TEFA memastikan produk aman dari bahaya biologis, kimia, dan fisik.</p>`
       },
       s4: {
         title: "SKP (Surat Kelayakan Produksi)",
         validity: "Hingga 2026",
-        image: "sertifikat_skp.jpg",
+        image: "/sertifikat_skp.jpg", // FIXED
         content: `<p>Surat Kelayakan Produksi (SKP) diterbitkan oleh UPT PMP2KP Kementerian Kelautan dan Perikanan RI.</p><p>Dokumen ini membuktikan bahwa fasilitas, peralatan, dan SDM TEFA memenuhi standar produksi pangan olahan perikanan.</p>`
       }
     };

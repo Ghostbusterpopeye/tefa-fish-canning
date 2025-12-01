@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inovasi - TEFA Pengalengan Ikan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style_berita.css">
+  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
+  <link rel="stylesheet" href="/style_berita.css"> <!-- FIXED -->
 </head>
 <body>
   <!-- Navigation -->
   <header>
     <div class="logo">
-      <img src="Logotefa.png" alt="Logo TEFA">
+      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
     </div>
     <nav>
       <ul>
@@ -77,7 +77,7 @@
           <!-- News Item 1 -->
           <div class="news-item" onclick="showDetail('inovasi1')">
             <div class="news-image">
-              <img src="inovasi1.jpg" alt="Teknologi Retort Terbaru">
+              <img src="/inovasi1.jpg" alt="Teknologi Retort Terbaru"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories">
@@ -92,7 +92,7 @@
           <!-- News Item 2 -->
           <div class="news-item" onclick="showDetail('inovasi2')">
             <div class="news-image">
-              <img src="inovasi2.jpg" alt="Kemasan Ramah Lingkungan">
+              <img src="/inovasi2.jpg" alt="Kemasan Ramah Lingkungan"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories">
@@ -103,6 +103,8 @@
               <div class="news-date">15 Desember 2023</div>
             </div>
           </div>
+        </div> <!-- TAMBAH closing div untuk .news-grid -->
+      </section>
 
       <!-- Section: Detail Berita -->
       <section id="detail-berita" class="news-section">
@@ -127,9 +129,9 @@
     <div class="footer-container">
       <div class="footer-brand">
         <div class="footer-logos">
-          <img src="logopolije.png" alt="Logo 1">
-          <img src="Logosip.png" alt="Logo 2">
-          <img src="Logotefa.png" alt="Logo 3">
+          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
+          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
+          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
         </div>
         <span class="footer-text">Tefa Pengalengan Ikan</span>
       </div>
@@ -178,7 +180,7 @@
         title: 'TEFA Polije implementasikan teknologi retort terbaru untuk tingkatkan efisiensi produksi',
         category: 'Inovasi',
         date: '20 Desember 2023',
-        image: 'inovasi1.jpg',
+        image: '/inovasi1.jpg', // FIXED
         content: `
           <p>TEFA Polije telah mengimplementasikan teknologi retort generasi terbaru yang mampu meningkatkan efisiensi produksi hingga 40%. Teknologi ini dilengkapi dengan sistem kontrol otomatis yang lebih presisi dalam mengatur suhu dan tekanan selama proses sterilisasi.</p>
           <p>Dengan teknologi retort terbaru ini, waktu proses sterilisasi dapat dikurangi tanpa mengurangi efektivitas pembunuhan mikroorganisme. Hal ini tidak hanya meningkatkan produktivitas, tetapi juga menghemat energi dan biaya operasional.</p>
@@ -189,7 +191,7 @@
         title: 'Inovasi kemasan ramah lingkungan untuk produk sarden kaleng TEFA Polije',
         category: 'Inovasi',
         date: '15 Desember 2023',
-        image: 'inovasi2.jpg',
+        image: '/inovasi2.jpg', // FIXED
         content: `
           <p>TEFA Polije mengembangkan inovasi kemasan ramah lingkungan untuk produk sarden kaleng. Kemasan baru ini menggunakan material yang dapat didaur ulang 100% dan menggunakan tinta berbasis air yang lebih aman bagi lingkungan.</p>
           <p>Desain kemasan juga dioptimalkan untuk mengurangi penggunaan material tanpa mengurangi fungsi proteksi terhadap produk. Inovasi ini sejalan dengan komitmen TEFA Polije dalam mendukung program pembangunan berkelanjutan.</p>

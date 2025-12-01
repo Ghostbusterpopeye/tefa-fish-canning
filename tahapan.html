@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tahapan Proses Pembuatan - TEFA Pengalengan Ikan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style_proses.css">
+  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
+  <link rel="stylesheet" href="/style_proses.css"> <!-- FIXED -->
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="Logotefa.png" alt="Logo TEFA">
+      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
     </div>
     <nav>
       <ul>
@@ -65,7 +65,7 @@
         <div class="news-grid">
           <div class="news-item" onclick="showDetail('t1')">
             <div class="news-image">
-              <img src="Praktik Pengalengan.jpg" alt="Penyortiran Ikan">
+              <img src="/Praktik Pengalengan.jpg" alt="Penyortiran Ikan"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Tahapan</span></div>
@@ -76,7 +76,7 @@
           </div>
           <div class="news-item" onclick="showDetail('t2')">
             <div class="news-image">
-              <img src="produkmahasiswa.jpg" alt="Pengisian Kaleng">
+              <img src="/produkmahasiswa.jpg" alt="Pengisian Kaleng"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Tahapan</span></div>
@@ -87,7 +87,7 @@
           </div>
           <div class="news-item" onclick="showDetail('t3')">
             <div class="news-image">
-              <img src="foto tahapan pemberian saus.jpg" alt="Pemberian Saus">
+              <img src="/foto tahapan pemberian saus.jpg" alt="Pemberian Saus"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Tahapan</span></div>
@@ -98,7 +98,7 @@
           </div>
           <div class="news-item" onclick="showDetail('t4')">
             <div class="news-image">
-              <img src="proseskrusial.jpg" alt="Sterilisasi">
+              <img src="/proseskrusial.jpg" alt="Sterilisasi"> <!-- FIXED -->
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Tahapan</span></div>
@@ -130,9 +130,9 @@
     <div class="footer-container">
       <div class="footer-brand">
         <div class="footer-logos">
-          <img src="logopolije.png" alt="Logo 1">
-          <img src="Logosip.png" alt="Logo 2">
-          <img src="Logotefa.png" alt="Logo 3">
+          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
+          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
+          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
         </div>
         <span class="footer-text">Tefa Pengalengan Ikan</span>
       </div>
@@ -180,25 +180,25 @@
       t1: {
         title: "Penyortiran Ikan",
         stage: "1",
-        image: "Praktik Pengalengan.jpg",
+        image: "/Praktik Pengalengan.jpg", // FIXED
         content: `<p>Ikan lemuru segar diterima dari nelayan dan langsung dipilih berdasarkan ukuran, kesegaran, dan kondisi fisik. Proses ini memastikan konsistensi kualitas produk akhir.</p><p>Ikan yang lolos seleksi dicuci bersih dan disiapkan untuk tahap pengalengan.</p>`
       },
       t2: {
         title: "Pengisian Kaleng",
         stage: "2",
-        image: "produkmahasiswa.jpg",
+        image: "/produkmahasiswa.jpg", // FIXED
         content: `<p>Ikan dimasukkan ke dalam kaleng baja food-grade secara manual oleh mahasiswa. Kapasitas disesuaikan dengan standar berat bersih 425 gram.</p><p>Setiap kaleng diperiksa untuk memastikan tidak ada kebocoran sebelum tahap selanjutnya.</p>`
       },
       t3: {
         title: "Pemberian Saus",
         stage: "3",
-        image: "foto tahpan pemberian saus",
+        image: "/foto tahapan pemberian saus.jpg", // FIXED: typo diperbaiki + .jpg
         content: `<p>Saus tomat, saus cabai, atau larutan garam ditambahkan sesuai jenis produk. Semua saus dibuat dari bahan alami tanpa pengawet.</p><p>Resep khas ini merupakan hasil riset mahasiswa Politeknik Negeri Jember.</p>`
       },
       t4: {
         title: "Sterilisasi (Retorting)",
         stage: "4",
-        image: "proseskrusial.jpg",
+        image: "/proseskrusial.jpg", // FIXED
         content: `<p>Kaleng dimasukkan ke mesin retort dan dipanaskan pada suhu 115–121°C selama 60–90 menit. Proses ini membunuh semua mikroorganisme berbahaya.</p><p>Produk menjadi aman, awet, dan siap dipasarkan tanpa perlu pendinginan.</p>`
       }
     };
