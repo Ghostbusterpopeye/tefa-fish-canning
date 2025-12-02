@@ -2,16 +2,20 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>TEFA Pengalengan Ikan - Beranda</title>
-  <link rel="stylesheet" href="/style.css" /> <!-- FIXED -->
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
+      <img src="/Logotefa.png" alt="Logo TEFA">
     </div>
+    
+    <!-- Menu Toggle untuk Mobile -->
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    
     <nav>
       <ul>
         <li><a href="index.html" class="active">BERANDA</a></li>
@@ -45,8 +49,8 @@
 
   <section class="hero">
     <div class="hero-image">
-      <h2>TEFA PENGALENGAN IKAN POLIJE</h2>
-      <img src="/Gambartefapengalenganikan.jpg" alt="Gedung Tefa Polije"> <!-- FIXED -->
+      <h1>TEFA PENGALENGAN IKAN POLIJE</h1>
+      <img src="/Gambartefapengalenganikan.jpg" alt="Gedung Tefa Polije">
     </div>
     <p class="hero-text">Teaching Factory (Tefa) adalah konsep pengajaran berbasis standar industri dalam lingkungan nyata. Di Politeknik Negeri Jember (Polije), nyata dari industri ini dalam suasana nyata. Di Politeknik Negeri Jember (Polije) terdapat Tefa Canning yang memproduksi pangan kaleng, salah satunya ikan lemuru</p>
   </section>
@@ -59,29 +63,34 @@
           <!-- Produk 1 -->
           <a href="produk.html#p1" class="product-card-link">
             <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Tomat"> <!-- FIXED -->
+              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Tomat">
               <h3>Sarden SIP Saus Tomat</h3>
-              <p>Sehat lezat dan Bergizi</p>
+              <p>Sehat, lezat dan bergizi</p>
             </div>
           </a>
 
           <!-- Produk 2 -->
           <a href="produk.html#p2" class="product-card-link">
             <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Asin"> <!-- FIXED -->
+              <img src="/sarden_saos_tomat.png" alt="Sarden Asin">
               <h3>Sarden SIP Asin</h3>
-              <p>Sehat lezat dan Bergizi</p>
+              <p>Sehat, lezat dan bergizi</p>
             </div>
           </a>
 
           <!-- Produk 3 -->
           <a href="produk.html#p3" class="product-card-link">
             <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Cabai"> <!-- FIXED -->
+              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Cabai">
               <h3>Sarden SIP Saus Cabai</h3>
-              <p>Sehat lezat dan Bergizi</p>
+              <p>Sehat, lezat dan bergizi</p>
             </div>
           </a>
+        </div>
+        
+        <!-- Link Lihat Semua Produk -->
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="produk.html" class="lihat-semua">Lihat Semua Produk →</a>
         </div>
       </div>
     </div>
@@ -91,9 +100,9 @@
     <div class="footer-container">
       <div class="footer-brand">
         <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
-          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
-          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
+          <img src="/logopolije.png" alt="Logo Politeknik Negeri Jember">
+          <img src="/Logosip.png" alt="Logo SIP">
+          <img src="/Logotefa.png" alt="Logo TEFA">
         </div>
         <span class="footer-text">Tefa Pengalengan Ikan</span>
       </div>
@@ -135,14 +144,7 @@
     </div>
   </footer>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const hash = window.location.hash.substring(1);
-    if (hash && produkData[hash]) {
-      showDetail(hash);
-    }
-  });
-</script>
+  <script src="/script.js"></script>
 
 </body>
 </html>
