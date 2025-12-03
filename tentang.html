@@ -4,55 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tentang Kami - TEFA Pengalengan Ikan</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style.css" /> <!-- FIXED -->
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA">
+      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
     </div>
     <nav>
       <ul>
-        <li><a href="/index.html">BERANDA</a></li>
-        <li><a href="/tentang.html" class="active">TENTANG KAMI</a></li>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="tentang.html" class="active">TENTANG KAMI</a></li>
         <li class="dropdown">
-          <a href="/produk.html">PRODUK KAMI</a>
+          <a href="produk.html">PRODUK KAMI</a>
           <div class="dropdown-content">
-            <a href="/produk.html">Detail Produk</a>
-            <a href="/informasi.html">Informasi Keamanan</a>
+            <a href="produk.html">Detail Produk</a>
+            <a href="informasi.html">Informasi Keamanan</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="/tahapan.html">PROSES PEMBUATAN</a>
+          <a href="tahapan.html">PROSES PEMBUATAN</a>
           <div class="dropdown-content">
-            <a href="/tahapan.html">Tahapan</a>
-            <a href="/alat.html">Alat-Alat</a>
+            <a href="tahapan.html">Tahapan</a>
+            <a href="alat.html">Alat-Alat</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="/berita.html">BERITA</a>
+          <a href="berita.html">BERITA</a>
           <div class="dropdown-content">
-            <a href="/berita.html#kegiatan">Kegiatan</a>
-            <a href="/berita.html#inovasi">Inovasi</a>
-            <a href="/berita.html#pencapaian">Pencapaian</a>
+            <a href="kegiatan.html">Kegiatan</a> <!-- FIXED -->
+            <a href="inovasi.html">Inovasi</a> <!-- FIXED -->
+            <a href="pencapaian.html">Pencapaian</a> <!-- FIXED -->
           </div>
         </li>
-        <li><a href="/kontak.html">KONTAK</a></li>
+        <li><a href="kontak.html">KONTAK</a></li>
       </ul>
     </nav>
   </header>
 
-   <main>
-     <div class="about-box">
-       <div class="image-wrapper">
-       <img src="/sarden.jpg" alt="Produk Sarden" class="about-img">
-     </div>
-    <div class="text-wrapper">
-        <h3>Tentang Sarden</h3>
-        <p>Sarden ini merupakan produk asli dari politeknik negeri jember. Seluruh formulasi resep dan proses produksinya merupakan hasil karya dan penelitian mahasiswa, mulai dari peracikan bumbu, penyusunan mesin, hingga pengaturan suhu. Produk ini dibuat tanpa bahan pengawet.</p>
-       </div>
-    </div>
+  <main>
+    <div class="container">
+      <div class="about-box">
+        <img src="/sarden.jpg" alt="Produk Sarden" class="about-img"> <!-- FIXED -->
+        <div>
+          <h3>Tentang Sarden</h3>
+          <p>Sarden ini merupakan produk asli dari politeknik negeri jember. Seluruh formulasi resep dan proses produksinya merupakan hasil karya dan penelitian mahasiswa, mulai dari peracikan bumbu, penyusunan mesin, hingga pengaturan suhu. Produk ini dibuat tanpa bahan pengawet.</p>
+        </div>
+      </div>
 
       <h3 style="color:#000000; margin:30px 0;">Sejarah</h3>
       <p>Awalnya pada tahun 2000-an TEFA Pengalengan ikan tidak berdiri sendiri melainkan berdiri sebagai UPT Pengolahan dan Pengemasan Produk Pangan (UPP). Setelah itu pada tahun 2015 UPT dipecah dan menjadi Teaching Factory sebagai pengalengan ikan (Fish Canning). Pada tahun 2016 hingga 2019 TEFA mendapatkan revitalisasi fasilitas dan berkembang hingga pindah ke gedung baru pada tahun 2019.</p>
@@ -92,64 +91,53 @@
     </div>
   </main>
 
-<footer>
-  <div class="footer-container">
-    <div class="footer-brand">
-      <div class="footer-logos">
-        <img src="/logopolije.png" alt="Logo Polije">
-        <img src="/Logosip.png" alt="Logo SIP">
-        <img src="/Logotefa.png" alt="Logo TEFA">
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
+          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
+          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
+        </div>
+        <span class="footer-text">Tefa Pengalengan Ikan</span>
       </div>
-      <span class="footer-text">Tefa Pengalengan</span>
-    </div>
-
-    <div class="footer-menu">
-      <!-- Kolom 1: Alamat -->
-      <div class="footer-menu-column">
-        <h4>Alamat</h4>
-        <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-      </div>
-
-      <!-- Kolom 2: Tentang Kami + KONTAK -->
-      <div class="footer-menu-column">
-        <h4>Tentang kami</h4>
-        <a href="/tentang.html">Sejarah</a>
-        <a href="/tentang.html">Visi misi</a>
-        <a href="/tentang.html">Tentang Sarden</a>
-
-        <!-- Tambahkan "Kontak" di sini (bukan sebagai kolom terpisah) -->
-        <h4 style="margin-top: 15px;">Kontak</h4>
-        <a href="/kontak.html">Hubungi Kami</a>
-      </div>
-
-      <!-- Kolom 3: Produk Kami -->
-      <div class="footer-menu-column">
-        <h4>Produk Kami</h4>
-        <a href="/produk.html">Detail produk</a>
-        <a href="/informasi.html">Informasi keamanan produk</a>
-      </div>
-
-      <!-- Kolom 4: Proses pembuatan -->
-      <div class="footer-menu-column">
-        <h4>Proses pembuatan</h4>
-        <a href="/tahapan.html">Tahapan</a>
-        <a href="/alat.html">Alat alat</a>
-      </div>
-
-      <!-- Kolom 5: Berita -->
-      <div class="footer-menu-column">
-        <h4>Berita</h4>
-        <a href="/kegiatan.html">Kegiatan</a>
-        <a href="/inovasi.html">Inovasi</a>
-        <a href="/pencapaian.html">Pencapaian</a>
+      <div class="footer-menu">
+        <div class="footer-menu-column">
+          <h4>Alamat</h4>
+          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
+        </div>
+        <div class="footer-menu-column">
+          <h4>Tentang kami</h4>
+          <a href="tentang.html">Sejarah</a> <!-- FIXED -->
+          <a href="tentang.html">Visi misi</a> <!-- FIXED -->
+          <a href="tentang.html">Tentang Sarden</a> <!-- FIXED -->
+        </div>
+        <div class="footer-menu-column">
+          <h4>Produk Kami</h4>
+          <a href="produk.html">Detail produk</a> <!-- FIXED -->
+          <a href="informasi.html">Informasi keamanan produk</a> <!-- FIXED -->
+        </div>
+        <div class="footer-menu-column">
+          <h4>Proses pembuatan</h4>
+          <a href="tahapan.html">Tahapan</a> <!-- FIXED -->
+          <a href="alat.html">Alat alat</a> <!-- FIXED -->
+        </div>
+        <div class="footer-menu-column">
+          <h4>Berita</h4>
+          <a href="kegiatan.html">Kegiatan</a> <!-- FIXED -->
+          <a href="inovasi.html">Inovasi</a> <!-- FIXED -->
+          <a href="pencapaian.html">Pencapaian</a> <!-- FIXED -->
+        </div>
+        <div class="footer-menu-column">
+          <h4>Kontak</h4>
+          <a href="kontak.html">Hubungi Kami</a> <!-- FIXED -->
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <h3>Smart, Innovative, Professional</h3>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <h3>Smart, Innovative, Professional</h3>
+    </div>
+  </footer>
 
 </body>
 </html>
