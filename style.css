@@ -1,3 +1,4 @@
+style.css
 /* === VARIABEL WARNA === */
 :root {
   --primary-red: #B31011;
@@ -16,6 +17,7 @@ body {
   background-color: #ffffff;
   color: #222;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
@@ -27,13 +29,14 @@ body {
 /* === HEADER === */
 header {
   background-color: var(--primary-red);
-  padding: 10px 40px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -44,6 +47,7 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -52,6 +56,7 @@ nav a {
   font-weight: bold;
   padding: 8px 12px;
   display: block;
+  white-space: nowrap;
 }
 
 nav a:hover,
@@ -99,7 +104,7 @@ nav a.active {
 /* === MAIN === */
 main {
   min-height: 60vh;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 h2.page-title {
@@ -108,35 +113,8 @@ h2.page-title {
   margin-bottom: 30px;
   font-size: 2rem;
   font-weight: 700;
+  padding: 0 15px;
 }
-
-    /* Cards */
-    .card-tefa {
-      border: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-
-    .card-tefa:hover {
-      transform: scale(1.02);
-    }
-
-    .card-img-tefa {
-      height: 200px;
-      object-fit: cover;
-    }
-
-    /* Links */
-    .lihat-semua {
-      color: var(--primary-red);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .lihat-semua:hover {
-      text-decoration: underline;
-    }
 
 /* === LINK "LIHAT SEMUA" === */
 .lihat-semua {
@@ -152,8 +130,8 @@ h2.page-title {
 
 /* === KONTEN UTAMA === */
 .main-content {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -162,6 +140,8 @@ h2.page-title {
 .hero {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 40px;
+  padding: 0 15px;
 }
 
 .hero h1 {
@@ -170,10 +150,10 @@ h2.page-title {
   margin-bottom: 20px;
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 40px;
+.hero h2 {
+  font-size: 1.8rem;
+  color: var(--primary-red);
+  margin-bottom: 20px;
 }
 
 .hero-image img {
@@ -181,7 +161,7 @@ h2.page-title {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin: 0 auto 30px; /* Tambahkan margin-bottom untuk jarak ke teks */
+  margin: 0 auto 30px;
   display: block;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -192,10 +172,10 @@ h2.page-title {
   font-size: 1.1rem;
   color: #444;
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* === Produk di Halaman Beranda === */
-
 .products {
   padding: 2rem 1rem;
   background-color: #f9f9f9;
@@ -215,9 +195,9 @@ h2.page-title {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
+  padding: 0 15px;
 }
 
-/* Link pembungkus kartu */
 .product-card-link {
   text-decoration: none;
   color: inherit;
@@ -226,7 +206,6 @@ h2.page-title {
   max-width: 320px;
 }
 
-/* Kartu produk */
 .product-card {
   background: white;
   border-radius: 12px;
@@ -259,17 +238,9 @@ h2.page-title {
   margin: 0.5rem 0;
 }
 
-/* Efek hover */
 .product-card-link:hover .product-card {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* === TENTANG KAMI === */
@@ -282,6 +253,27 @@ h2.page-title {
   align-items: flex-start;
   border-radius: 8px;
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+/* === TENTANG KAMI - SUSUNAN GAMBAR & TEKS HORIZONTAL === */
+.image-wrapper img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.text-wrapper h3 {
+  color: var(--primary-red);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.text-wrapper p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .about-img {
@@ -297,23 +289,21 @@ h2.page-title {
   margin: 40px 0;
 }
 
-.visi-box {
+.visi-box, .misi-box {
   flex: 1;
-  min-width: 300px;
-  background: #ffffff;
+  min-width: 280px;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
 }
 
+.visi-box {
+  background: #ffffff;
+}
+
 .misi-box {
-  flex: 1;
-  min-width: 300px;
   background: #d50000;
   color: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 10px 12px rgba(0,0,0,0.1);
 }
 
 .struktur-container {
@@ -327,7 +317,7 @@ h2.page-title {
 .box {
   background: #ffffff;
   padding: 20px;
-  min-width: 200px;
+  min-width: 180px;
   text-align: center;
   border-radius: 8px;
   transition: transform 0.3s;
@@ -336,15 +326,16 @@ h2.page-title {
 
 /* === PRODUK & INFORMASI === */
 .product-section, .product-security-content {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .product-item {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   margin: 40px 0;
-  padding: 45px 0; /* PERBAIKAN: Jarak vertikal lebih besar */
+  padding: 45px 0;
+  flex-wrap: wrap;
 }
 
 .product-item.reversed {
@@ -357,23 +348,29 @@ h2.page-title {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
-  margin-left: 35px; /* PERBAIKAN: Geser gambar lebih ke kanan */
+  margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .product-item img:hover {
   transform: scale(1.05);
 }
 
-/* === GARIS PEMISAH ANTAR PRODUK === */
 .product-item:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Garis lebih soft */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 45px;
   margin-bottom: 0;
+}
+
+.product-details {
+  flex: 1;
+  min-width: 250px;
 }
 
 .product-details h2 {
   color: var(--primary-red);
   margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 .info-details {
@@ -384,7 +381,7 @@ h2.page-title {
 
 .text-content {
   flex: 2;
-  max-width: 65%;
+  max-width: 100%;
 }
 
 .text-content ul {
@@ -398,8 +395,8 @@ h2.page-title {
 
 .certificate-area {
   flex: 1;
-  min-width: 300px;
-  min-height: 400px;
+  min-width: 280px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,6 +420,7 @@ h2.page-title {
   align-items: center;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
 }
 
 .process-block:nth-child(even) {
@@ -434,6 +432,7 @@ h2.page-title {
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .process-block h2 {
@@ -443,7 +442,6 @@ h2.page-title {
 }
 
 /* === KONTAK === */
-/* === KONTAK === */
 .kontak-container {
   display: flex;
   gap: 40px;
@@ -452,7 +450,7 @@ h2.page-title {
 
 .text-section, .map-section {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .contact-item h4 {
@@ -460,9 +458,13 @@ h2.page-title {
   margin: 20px 0 10px;
 }
 
-/* === MAPS BISA DIGERAKKAN === */
+.map-title h4 {
+  color: var(--primary-red);
+  margin-bottom: 15px;
+}
+
 .map-container {
-  height: 450px;
+  height: 400px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
@@ -489,6 +491,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
 }
 
 .footer-brand {
@@ -496,26 +499,29 @@ footer {
   align-items: center;
   gap: 16px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-logos {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Sesuai permintaan: TANPA outline lingkaran pada logo footer */
 .footer-logos img {
   width: 40px;
   height: 40px;
-  /* border-radius dihapus */
   object-fit: cover;
 }
 
 .footer-text {
   font-weight: bold;
   font-size: 18px;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 
 .footer-menu {
@@ -525,12 +531,14 @@ footer {
   justify-content: center;
   margin-bottom: 20px;
   text-align: left;
+  width: 100%;
 }
 
 .footer-menu-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 150px;
 }
 
 .footer-menu-column h4 {
@@ -544,6 +552,7 @@ footer {
   color: white;
   text-decoration: none;
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 .footer-menu-column a:hover {
@@ -567,40 +576,468 @@ footer {
   letter-spacing: 1px;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .process-block {
+/* Tablet */
+@media (max-width: 992px) {
+  header {
+    padding: 10px 15px;
+  }
+  
+  nav ul {
+    gap: 15px;
+  }
+  
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  
+  .hero h1, .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .about-box {
     flex-direction: column;
     text-align: center;
   }
+  
+  .about-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .product-item {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .product-item img {
+    margin: 0 auto;
+  }
+  
+  .info-details {
+    flex-direction: column;
+  }
+  
+  .text-content {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Header Mobile - TETAP HORIZONTAL */
+  header {
+    flex-direction: row;
+    padding: 8px 10px;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+  
+  .logo img {
+    height: 45px;
+    flex-shrink: 0;
+  }
+  
+  nav {
+    overflow-x: auto;
+    flex: 1;
+  }
+  
+  nav ul {
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  nav li {
+    flex-shrink: 0;
+  }
+  
+  nav a {
+    padding: 8px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    min-width: 150px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Main Content Mobile */
+  main {
+    padding: 20px 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  h2.page-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Hero Mobile */
+  .hero {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .hero h1, .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  /* Product Grid Mobile */
+  .products {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 10px;
+  }
+  
+  .product-card {
+    max-width: 100%;
+  }
+  
+  .product-card img {
+    height: 180px;
+  }
+  
+  /* Tentang Mobile */
+/* Tentang Mobile */
+.about-box {
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-box .image-wrapper img {
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-box .text-wrapper h3,
+.about-box .text-wrapper p {
+  text-align: center;
+  max-width: 100%;
+}
+  
+  /* Product Item Mobile */
+  .product-section, .product-security-content {
+    padding: 0 15px;
+  }
+  
+  .product-item {
+    flex-direction: column !important;
+    padding: 25px 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 150px;
+    margin: 0 auto 15px;
+  }
+  
+  .product-details {
+    width: 100%;
+  }
+  
+  .product-details h2 {
+    font-size: 1.3rem;
+  }
+  
+  .text-content ul {
+    text-align: left;
+  }
+  
+  .certificate-area {
+    width: 100%;
+    min-height: 250px;
+  }
+  
+  /* Process Block Mobile */
+  .process-block {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 20px 15px;
+    margin: 20px 0;
+  }
+  
   .process-block img {
     width: 100%;
+    max-width: 100%;
     height: auto;
   }
+  
+  .process-block h2 {
+    font-size: 1.3rem;
+  }
+  
   .process-block p {
-    text-align: center;
+    text-align: justify;
   }
+  
+  /* Kontak Mobile */
+  .kontak-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .text-section, .map-section {
+    width: 100%;
+  }
+  
+  .map-container {
+    height: 300px;
+  }
+  
+  /* Footer Mobile - TETAP HORIZONTAL */
+  footer {
+    padding: 20px 10px;
+  }
+  
   .footer-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: wrap;
   }
+  
   .footer-brand {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    flex-direction: row;
+    width: auto;
+    justify-content: flex-start;
+    margin-bottom: 15px;
   }
+  
+  .footer-logos {
+    justify-content: flex-start;
+  }
+  
+  .footer-logos img {
+    width: 30px;
+    height: 30px;
+  }
+  
   .footer-text {
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .footer-menu {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-menu-column {
+    width: auto;
+    min-width: 100px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .footer-menu-column h4 {
+    font-size: 11px;
+  }
+  
+  .footer-menu-column a,
+  .footer-menu-column p {
+    font-size: 10px;
+    text-align: left;
+  }
+  
+  .footer-bottom h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  /* Logo lebih kecil */
+  .logo img {
+    height: 35px;
+  }
+  
+  /* Nav items lebih compact */
+  nav a {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+  
+  /* Content */
+  h2.page-title {
+    font-size: 1.3rem;
+  }
+  
+  .hero h1, .hero h2 {
+    font-size: 1.3rem;
+  }
+  
+  .hero-text {
+    font-size: 0.9rem;
+  }
+  
+  .product-card img {
+    height: 150px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .product-details h2 {
+    font-size: 1.2rem;
+  }
+  
+  .process-block {
+    padding: 15px 10px;
+  }
+  
+  /* Footer Extra Small - TETAP HORIZONTAL */
+  .footer-logos img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .footer-text {
+    font-size: 11px;
+  }
+  
+  .footer-menu-column {
+    min-width: 80px;
+  }
+  
+  .footer-menu-column h4 {
+    font-size: 10px;
+  }
+  
+  .footer-menu-column a,
+  .footer-menu-column p {
+    font-size: 9px;
+  }
+  
+  .footer-bottom h3 {
     font-size: 16px;
   }
+  
+  .box {
+    padding: 15px;
+    min-width: 150px;
+  }
+}
 
-  /* Responsif untuk kartu berita */
-  .berita-card img {
-    height: 140px;
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-image img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .map-container {
+    height: 250px;
+  }
+  
+  .process-block img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* === PERBAIKAN FOOTER: KONTAK DI BAWAH TENTANG KAMI === */
+
+/* Pastikan hanya 5 kolom, dan "Kontak" muncul di bawah "Tentang Kami" */
+.footer-menu-column .kontak-header {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Mobile: pastikan kolom tetap horizontal dan muat */
+@media (max-width: 768px) {
+  .footer-menu {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 15px !important;
   }
 
-  /* Sesuaikan margin gambar produk di mobile */
-  .product-item img {
-    margin-left: 15px;
-    margin-right: 15px;
+  .footer-menu-column {
+    min-width: 100px !important;
+    max-width: 150px !important;
+    font-size: 10px !important;
+  }
+
+  .footer-menu-column h4 {
+    font-size: 11px !important;
+  }
+
+  .footer-menu-column .kontak-header {
+    margin-top: 15px !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-menu-column {
+    min-width: 90px !important;
+    font-size: 9px !important;
+  }
+
+  .footer-menu-column h4 {
+    font-size: 10px !important;
+  }
+
+  .footer-menu-column .kontak-header {
+    font-size: 10px !important;
   }
 }

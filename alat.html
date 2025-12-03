@@ -16,31 +16,31 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">BERANDA</a></li> <!-- FIXED: hapus spasi -->
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li><a href="/index.html">BERANDA</a></li>
+        <li><a href="/tentang.html">TENTANG KAMI</a></li>
         <li class="dropdown">
-          <a href="produk.html">PRODUK KAMI</a>
+          <a href="/produk.html">PRODUK KAMI</a>
           <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html">Informasi Keamanan</a>
+            <a href="/produk.html">Detail Produk</a>
+            <a href="/informasi.html">Informasi Keamanan</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="tahapan.html" class="active">PROSES PEMBUATAN</a>
+          <a href="/tahapan.html" class="active">PROSES PEMBUATAN</a>
           <div class="dropdown-content">
-            <a href="tahapan.html">Tahapan</a>
-            <a href="alat.html" class="active">Alat-Alat</a>
+            <a href="/tahapan.html">Tahapan</a>
+            <a href="/alat.html" class="active">Alat-Alat</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="berita.html">BERITA</a>
+          <a href="/berita.html">BERITA</a>
           <div class="dropdown-content">
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
+            <a href="/kegiatan.html">Kegiatan</a>
+            <a href="/inovasi.html">Inovasi</a>
+            <a href="/pencapaian.html">Pencapaian</a>
           </div>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li><a href="/kontak.html">KONTAK</a></li>
       </ul>
     </nav>
   </header>
@@ -50,10 +50,10 @@
       <h1 class="page-title">Alat-Alat Produksi</h1>
 
       <div class="news-nav">
-        <a href="tahapan.html" class="news-nav-item">
+        <a href="/tahapan.html" class="news-nav-item">
           <i class="fas fa-list-ol"></i> Tahapan
         </a>
-        <a href="alat.html" class="news-nav-item active">
+        <a href="/alat.html" class="news-nav-item active">
           <i class="fas fa-tools"></i> Alat-Alat
         </a>
       </div>
@@ -62,7 +62,7 @@
         <div class="news-grid">
           <div class="news-item" onclick="showDetail('a1')">
             <div class="news-image">
-              <img src="/foto alat penutup kaleng.jpg" alt="Mesin Penutup Kaleng"> <!-- FIXED -->
+              <img src="/foto alat penutup kaleng.jpg" alt="Mesin Penutup Kaleng">
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
@@ -73,7 +73,7 @@
           </div>
           <div class="news-item" onclick="showDetail('a2')">
             <div class="news-image">
-              <img src="/foto alat sterilisasi.jpg" alt="Mesin Retort"> <!-- FIXED -->
+              <img src="/foto alat sterilisasi.jpg" alt="Mesin Retort">
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
@@ -84,7 +84,7 @@
           </div>
           <div class="news-item" onclick="showDetail('a3')">
             <div class="news-image">
-              <img src="/foto alat pencuci ikan.jpg" alt="Mesin Pencuci Ikan"> <!-- FIXED -->
+              <img src="/foto alat pencuci ikan.jpg" alt="Mesin Pencuci Ikan">
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
@@ -95,7 +95,7 @@
           </div>
           <div class="news-item" onclick="showDetail('a4')">
             <div class="news-image">
-              <img src="/foto alat peniris ikan.jpg" alt="Mesin Peniris Ikan"> <!-- FIXED -->
+              <img src="/foto alat peniris ikan.jpg" alt="Mesin Peniris Ikan">
             </div>
             <div class="news-content">
               <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
@@ -111,7 +111,7 @@
         <div class="berita-detail">
           <h2 id="detail-title" class="page-title">Judul Alat</h2>
           <div class="meta" id="detail-meta">ID: | Kategori: Alat Produksi</div>
-          <img id="detail-image" src="" alt="Gambar Alat" class="img-fluid">
+          <img id="detail-image" src="" alt="Gambar Alat">
           <div class="content" id="detail-content"></div>
           <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
             <i class="fas fa-arrow-left"></i> Kembali ke Alat-Alat
@@ -121,79 +121,90 @@
     </div>
   </main>
 
-  <!-- Footer-->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
-          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
-          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logos">
+        <img src="/logopolije.png" alt="Logo Polije">
+        <img src="/Logosip.png" alt="Logo SIP">
+        <img src="/Logotefa.png" alt="Logo TEFA">
       </div>
-      <div class="footer-menu">
-        <div class="footer-menu-column">
-          <h4>Alamat</h4>
-          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Tentang kami</h4>
-          <a href="tentang.html">Sejarah</a>
-          <a href="tentang.html">Visi misi</a>
-          <a href="tentang.html">Tentang Sarden</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Produk Kami</h4>
-          <a href="produk.html">Detail produk</a>
-          <a href="informasi.html">Informasi keamanan produk</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Proses pembuatan</h4>
-          <a href="tahapan.html">Tahapan</a>
-          <a href="alat.html">Alat alat</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Berita</h4>
-          <a href="kegiatan.html">Kegiatan</a>
-          <a href="inovasi.html">Inovasi</a>
-          <a href="pencapaian.html">Pencapaian</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Kontak</h4>
-          <a href="kontak.html">Hubungi Kami</a>
-        </div>
+      <span class="footer-text">Tefa Pengalengan</span>
+    </div>
+
+    <div class="footer-menu">
+      <!-- Kolom 1: Alamat -->
+      <div class="footer-menu-column">
+        <h4>Alamat</h4>
+        <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami + KONTAK -->
+      <div class="footer-menu-column">
+        <h4>Tentang kami</h4>
+        <a href="/tentang.html">Sejarah</a>
+        <a href="/tentang.html">Visi misi</a>
+        <a href="/tentang.html">Tentang Sarden</a>
+
+        <!-- Tambahkan "Kontak" di sini (bukan sebagai kolom terpisah) -->
+        <h4 style="margin-top: 15px;">Kontak</h4>
+        <a href="/kontak.html">Hubungi Kami</a>
+      </div>
+
+      <!-- Kolom 3: Produk Kami -->
+      <div class="footer-menu-column">
+        <h4>Produk Kami</h4>
+        <a href="/produk.html">Detail produk</a>
+        <a href="/informasi.html">Informasi keamanan produk</a>
+      </div>
+
+      <!-- Kolom 4: Proses pembuatan -->
+      <div class="footer-menu-column">
+        <h4>Proses pembuatan</h4>
+        <a href="/tahapan.html">Tahapan</a>
+        <a href="/alat.html">Alat alat</a>
+      </div>
+
+      <!-- Kolom 5: Berita -->
+      <div class="footer-menu-column">
+        <h4>Berita</h4>
+        <a href="/kegiatan.html">Kegiatan</a>
+        <a href="/inovasi.html">Inovasi</a>
+        <a href="/pencapaian.html">Pencapaian</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
-    </div>
-  </footer>
+  </div>
+
+  <div class="footer-bottom">
+    <h3>Smart, Innovative, Professional</h3>
+  </div>
+</footer>
+
 
   <script>
     const alatData = {
       a1: {
         title: "Mesin Penutup Kaleng",
         id: "1",
-        image: "/foto alat penutup kaleng.jpg", // FIXED
+        image: "/foto alat penutup kaleng.jpg",
         content: `<p>Berfungsi menutup kaleng secara rapat dan kedap udara sehingga isi terlindungi dari kontaminasi.</p><p>Proses ini kritis agar produk tidak rusak selama sterilisasi atau penyimpanan.</p>`
       },
       a2: {
         title: "Mesin Retort",
         id: "2",
-        image: "/foto alat sterilisasi.jpg", // FIXED
+        image: "/foto alat sterilisasi.jpg",
         content: `<p>Memastikan sterilisasi komersial dengan pemanasan 115–121°C selama 60–90 menit.</p><p>Membunuh semua bakteri berbahaya termasuk <em>Clostridium botulinum</em>.</p>`
       },
       a3: {
         title: "Mesin Pencuci Ikan",
         id: "3",
-        image: "/foto alat pencuci ikan.jpg", // FIXED
+        image: "/foto alat pencuci ikan.jpg",
         content: `<p>Membersihkan ikan dari kotoran, lendir, dan darah menggunakan air mengalir dan sikat putar lembut.</p><p>Menjamin higienitas bahan baku dan mengurangi bau amis.</p>`
       },
       a4: {
         title: "Mesin Peniris Ikan",
         id: "4",
-        image: "/foto alat peniris ikan.jpg", // FIXED
+        image: "/foto alat peniris ikan.jpg",
         content: `<p>Mengurangi kadar air berlebih setelah pencucian menggunakan sistem putaran atau rak berlubang.</p><p>Memastikan rasio ikan-saus dalam kaleng tetap optimal.</p>`
       }
     };
