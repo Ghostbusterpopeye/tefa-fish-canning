@@ -1,283 +1,324 @@
+alat.html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kegiatan - TEFA Pengalengan Ikan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
-  <link rel="stylesheet" href="/style_berita.css"> <!-- FIXED -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Global Kustom -->
+  <link rel="stylesheet" href="style-global.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">BERANDA</a></li>
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
-        <li class="dropdown">
-          <a href="produk.html">PRODUK KAMI</a>
-          <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html">Informasi Keamanan</a>
-          </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logotefa.png" alt="Logo TEFA" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">BERANDA</a>
         </li>
-        <li class="dropdown">
-          <a href="tahapan.html">PROSES PEMBUATAN</a>
-          <div class="dropdown-content">
-            <a href="tahapan.html">Tahapan</a>
-            <a href="alat.html">Alat-Alat</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
         </li>
-        <li class="dropdown">
-          <a href="kegiatan.html" class="active">BERITA</a>
-          <div class="dropdown-content">
-            <a href="kegiatan.html" class="active">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
-          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="produk.html" role="button" data-bs-toggle="dropdown">
+            PRODUK KAMI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produk.html">Detail Produk</a></li>
+            <li><a class="dropdown-item" href="informasi.html">Informasi Keamanan</a></li>
+          </ul>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="tahapan.html" role="button" data-bs-toggle="dropdown">
+            PROSES PEMBUATAN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tahapan.html">Tahapan</a></li>
+            <li><a class="dropdown-item" href="alat.html">Alat-Alat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="kegiatan.html" role="button" data-bs-toggle="dropdown">
+            BERITA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="kegiatan.html">Kegiatan</a></li>
+            <li><a class="dropdown-item" href="inovasi.html">Inovasi</a></li>
+            <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">KONTAK</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+</nav>
 
-  <!-- Main Content -->
+  <!-- MAIN CONTENT -->
   <main class="py-5">
-    <div class="container">
-      
-      <!-- Page Title -->
+    <div class="container-custom">
       <h1 class="page-title">Berita Kegiatan</h1>
-      
-      <!-- News Navigation -->
-      <div class="news-nav">
-        <a href="kegiatan.html">
-          <button class="news-nav-item active">
-            <i class="fas fa-calendar-alt"></i>Kegiatan
-          </button>
-        </a>
-        <a href="inovasi.html">
-          <button class="news-nav-item">
-            <i class="fas fa-lightbulb"></i>Inovasi
-          </button>
-        </a>
-        <a href="pencapaian.html">
-          <button class="news-nav-item">
-            <i class="fas fa-trophy"></i>Pencapaian
-          </button>
-        </a>
-      </div>
 
-      <!-- Section: Kegiatan -->
-      <section id="kegiatan" class="news-section active">
-        <div class="news-grid">
-          <!-- News Item 1 -->
-          <div class="news-item" onclick="showDetail('kegiatan1')">
-            <div class="news-image">
-              <img src="/audit SNI.jpg" alt="Audit SN TEFA Canning"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories">
-                <span class="category-tag">Kegiatan</span>
+      <!-- Navigasi Berita -->
+<div class="d-flex flex-wrap justify-content-center align-items-center mt-4 mb-5 gap-3">
+  <a href="kegiatan.html" class="btn btn-primary d-flex align-items-center">
+    <i class="fas fa-calendar-alt me-2"></i> Kegiatan
+  </a>
+  <a href="inovasi.html" class="btn btn-outline-primary d-flex align-items-center">
+    <i class="fas fa-lightbulb me-2"></i> Inovasi
+  </a>
+  <a href="pencapaian.html" class="btn btn-outline-primary d-flex align-items-center">
+    <i class="fas fa-trophy me-2"></i> Pencapaian
+  </a>
+</div>
+
+      <!-- Daftar Kegiatan -->
+      <section id="kegiatan" class="active">
+        <div class="row g-4">
+          <!-- Kegiatan 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('kegiatan1')" style="cursor: pointer;">
+              <img src="audit SNI.jpg" class="card-img-top" alt="Audit SN TEFA Canning" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Kegiatan</span>
+                <h5 class="card-title text-red">Politeknik Negeri Jember laksanakan audit SNI...</h5>
+                <p class="card-text flex-grow-1">Audit Standar Nasional Indonesia (SNI) untuk produk sarden kaleng di Teaching Factory (TEFA) Canning...</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+                <small class="text-muted mt-2">15 November 2023</small>
               </div>
-              <h3 class="news-title">Politeknik Negeri Jember laksanakan audit SNI untuk produk sarden kaleng di TEFA Canning</h3>
-              <p class="news-summary">Audit Standar Nasional Indonesia (SNI) untuk produk sarden kaleng di Teaching Factory (TEFA) Canning sebagai langkah penting dalam memastikan kualitas dan keamanan produk.</p>
-              <div class="news-date">15 November 2023</div>
             </div>
           </div>
 
-          <!-- News Item 2 -->
-          <div class="news-item" onclick="showDetail('kegiatan2')">
-            <div class="news-image">
-              <img src="/produkmahasiswa.jpg" alt="Produk Pangan Kaleng Mahasiswa"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories">
-                <span class="category-tag">Kegiatan</span>
+          <!-- Kegiatan 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('kegiatan2')" style="cursor: pointer;">
+              <img src="produkmahasiswa.jpg" class="card-img-top" alt="Produk Pangan Kaleng Mahasiswa" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Kegiatan</span>
+                <h5 class="card-title text-red">Sarden SARDEN SIP POLIJE...</h5>
+                <p class="card-text flex-grow-1">Produk pangan kaleng higienis hasil produksi mahasiswa yang kompeten...</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+                <small class="text-muted mt-2">10 November 2023</small>
               </div>
-              <h3 class="news-title">Sarden SARDEN SIP POLIJE: Produk pangan kaleng higienis hasil produksi mahasiswa kompeten</h3>
-              <p class="news-summary">Produk pangan kaleng higienis hasil produksi mahasiswa yang kompeten di bidang pengalengan ikan.</p>
-              <div class="news-date">10 November 2023</div>
             </div>
           </div>
 
-          <!-- News Item 3 -->
-          <div class="news-item" onclick="showDetail('kegiatan3')">
-            <div class="news-image">
-              <img src="/proseskrusial.jpg" alt="Proses Krusial Pengalengan"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories">
-                <span class="category-tag">Kegiatan</span>
+          <!-- Kegiatan 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('kegiatan3')" style="cursor: pointer;">
+              <img src="proseskrusial.jpg" class="card-img-top" alt="Proses Krusial Pengalengan" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Kegiatan</span>
+                <h5 class="card-title text-red">Jamin mutu pangan: mahasiswa POLIJE...</h5>
+                <p class="card-text flex-grow-1">Mahasiswa POLIJE mempelajari proses krusial pengalengan ikan di mesin retort...</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+                <small class="text-muted mt-2">5 November 2023</small>
               </div>
-              <h3 class="news-title">Jamin mutu pangan: mahasiswa POLIJE pelajari proses krusial pengalengan ikan di mesin retort</h3>
-              <p class="news-summary">Mahasiswa POLIJE mempelajari proses krusial pengalengan ikan di mesin retort untuk menjamin mutu pangan.</p>
-              <div class="news-date">5 November 2023</div>
             </div>
           </div>
 
-          <!-- News Item 4 -->
-          <div class="news-item" onclick="showDetail('kegiatan4')">
-            <div class="news-image">
-              <img src="/Praktik Pengalengan.jpg" alt="Praktik Pengalengan Ikan"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories">
-                <span class="category-tag">Kegiatan</span>
+          <!-- Kegiatan 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('kegiatan4')" style="cursor: pointer;">
+              <img src="Praktik Pengalengan.jpg" class="card-img-top" alt="Praktik Pengalengan Ikan" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Kegiatan</span>
+                <h5 class="card-title text-red">TEFA POLIJE gelar praktik pengalengan ikan...</h5>
+                <p class="card-text flex-grow-1">TEFA POLIJE menggelar praktik pengalengan ikan dengan menerapkan standar higienis global.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+                <small class="text-muted mt-2">1 November 2023</small>
               </div>
-              <h3 class="news-title">TEFA POLIJE gelar praktik pengalengan ikan, terapkan standar higienis global</h3>
-              <p class="news-summary">TEFA POLIJE menggelar praktik pengalengan ikan dengan menerapkan standar higienis global.</p>
-              <div class="news-date">1 November 2023</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section: Detail Berita -->
-      <section id="detail-berita" class="news-section">
-        <div class="berita-detail">
-          <h2 id="detail-title" class="page-title">Judul Berita</h2>
-          <div class="meta text-muted mb-3" id="detail-meta">Tanggal: | Kategori: </div>
-          <img id="detail-image" src="" alt="Gambar Berita" class="img-fluid rounded mb-4">
-          <div class="content mb-4" id="detail-content">
-            <!-- Konten berita akan diisi oleh JavaScript -->
+      <!-- Detail Berita -->
+      <section id="detail-berita" class="mt-5" style="display: none;">
+        <div class="card shadow-red">
+          <div class="card-body p-4">
+            <h2 id="detail-title" class="card-title text-center mb-3 text-red">Judul Berita</h2>
+            <div class="text-muted text-center mb-4" id="detail-meta">
+              <i class="fas fa-calendar-alt me-2"></i>Tanggal: <span class="fw-bold">15 November 2023</span> | 
+              <i class="fas fa-tag ms-2 me-2"></i>Kategori: <span class="fw-bold">Kegiatan</span>
+            </div>
+            <img id="detail-image" src="" alt="Gambar Berita" class="img-fluid rounded shadow-sm mb-4">
+            <div id="detail-content" class="mb-4"></div>
+            <div class="text-center mt-4">
+              <button class="btn btn-secondary btn-lg" onclick="hideDetail()">
+                <i class="fas fa-arrow-left me-2"></i> Kembali ke Berita
+              </button>
+            </div>
           </div>
-          <button class="btn btn-danger" onclick="hideDetail()">
-            <i class="fas fa-arrow-left"></i>Kembali ke Berita
-          </button>
         </div>
       </section>
-
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
-          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
-          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+<!-- FOOTER -->
+<footer>
+  <div class="container-custom">
+    <!-- Logo + Nama - Sejajar Horizontal -->
+    <div class="row align-items-center mb-4">
+      <div class="col-auto d-flex align-items-center gap-3">
+        <img src="logopolije.png" alt="Logo Polije" height="50">
+        <img src="Logosip.png" alt="Logo SIP" height="50">
+        <img src="Logotefa.png" alt="Logo TEFA" height="50">
       </div>
-      <div class="footer-menu">
-        <div class="footer-menu-column">
-          <h4>Alamat</h4>
-          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Tentang kami</h4>
-          <a href="tentang.html">Sejarah</a>
-          <a href="tentang.html">Visi misi</a>
-          <a href="tentang.html">Tentang Sarden</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Produk Kami</h4>
-          <a href="produk.html">Detail produk</a>
-          <a href="informasi.html">Informasi keamanan produk</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Proses pembuatan</h4>
-          <a href="tahapan.html">Tahapan</a>
-          <a href="alat.html">Alat alat</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Berita</h4>
-          <a href="kegiatan.html">Kegiatan</a>
-          <a href="inovasi.html">Inovasi</a>
-          <a href="pencapaian.html">Pencapaian</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Kontak</h4>
-          <a href="kontak.html">Hubungi Kami</a>
+      <div class="col-auto">
+        <span style="font-weight: 600; font-size: 1.1rem; color: white;">Tefa Pengalengan Ikan</span>
+      </div>
+    </div>
+
+    <!-- Menu Footer -->
+    <div class="row text-white">
+      <!-- Kolom 1: Alamat -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Alamat</h5>
+        <p class="small" style="color: white !important; line-height: 1.6;">
+          Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>
+          Lingkungan Panji, Tegalgede,<br>
+          Kec. Sumbersari, Kabupaten Jember,<br>
+          Jawa Timur 68124<br>
+          Politeknik Negeri Jember
+        </p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Tentang kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Sejarah</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Visi misi</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tentang Sarden</a></li>
+          <li class="mt-2"><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Produk Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Produk Kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="produk.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Detail produk</a></li>
+          <li><a href="informasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Informasi keamanan produk</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Proses Pembuatan -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Proses pembuatan</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tahapan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tahapan</a></li>
+          <li><a href="alat.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Alat alat</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 5: Berita & Kontak -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="row">
+          <!-- Sub-Kolom 1: Berita -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Berita</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kegiatan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Kegiatan</a></li>
+              <li><a href="inovasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Inovasi</a></li>
+              <li><a href="pencapaian.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Pencapaian</a></li>
+            </ul>
+          </div>
+          <!-- Sub-Kolom 2: Kontak -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Kontak</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
+
+    <!-- Tagline -->
+    <div class="text-center">
+      <h4 style="color: white !important; font-family: 'Brush Script MT', cursive, sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Smart, Innovative, Professional
+      </h4>
     </div>
-  </footer>
-  
+  </div>
+</footer>
+
+  <!-- JavaScript Interaktif -->
   <script>
-    // Data berita kegiatan
     const beritaData = {
       'kegiatan1': {
         title: 'Politeknik Negeri Jember laksanakan audit SNI untuk produk sarden kaleng di TEFA Canning',
         category: 'Kegiatan',
         date: '15 November 2023',
-        image: '/audit SNI.jpg', // FIXED
-        content: `
-          <p>Politeknik Negeri Jember (Polije) telah berhasil melaksanakan audit Standar Nasional Indonesia (SNI) untuk produk sarden kaleng di Teaching Factory (TEFA) Canning. Audit ini merupakan langkah penting dalam memastikan kualitas dan keamanan produk sarden yang dihasilkan oleh mahasiswa.</p>
-          <p>Proses audit dilakukan selama tiga hari dengan melibatkan tim auditor dari Badan Standardisasi Nasional (BSN). Mereka mengevaluasi seluruh proses produksi, mulai dari penerimaan bahan baku, proses pengalengan, hingga pengemasan dan penyimpanan produk.</p>
-          <p>Audit SNI ini merupakan bukti komitmen Polije dalam menghasilkan produk pangan yang memenuhi standar nasional dan aman untuk dikonsumsi. Dengan lulus audit ini, produk sarden kaleng TEFA Canning dapat dipasarkan secara lebih luas dengan jaminan kualitas yang terpercaya.</p>
-        `
+        image: 'audit SNI.jpg',
+        content: `<p>Politeknik Negeri Jember (Polije) telah berhasil melaksanakan audit Standar Nasional Indonesia (SNI) untuk produk sarden kaleng di Teaching Factory (TEFA) Canning. Audit ini merupakan langkah penting dalam memastikan kualitas dan keamanan produk sarden yang dihasilkan oleh mahasiswa.</p><p>Proses audit dilakukan selama tiga hari dengan melibatkan tim auditor dari Badan Standardisasi Nasional (BSN). Mereka mengevaluasi seluruh proses produksi, mulai dari penerimaan bahan baku, proses pengalengan, hingga pengemasan dan penyimpanan produk.</p><p>Audit SNI ini merupakan bukti komitmen Polije dalam menghasilkan produk pangan yang memenuhi standar nasional dan aman untuk dikonsumsi. Dengan lulus audit ini, produk sarden kaleng TEFA Canning dapat dipasarkan secara lebih luas dengan jaminan kualitas yang terpercaya.</p>`
       },
       'kegiatan2': {
         title: 'Sarden SARDEN SIP POLIJE: Produk pangan kaleng higienis hasil produksi mahasiswa kompeten',
         category: 'Kegiatan',
         date: '10 November 2023',
-        image: '/produkmahasiswa.jpg', // FIXED
-        content: `
-          <p>Sarden SIP POLIJE merupakan produk pangan kaleng higienis yang dihasilkan oleh mahasiswa kompeten di bidang pengalengan ikan. Produk ini telah melalui berbagai tahapan produksi yang ketat dengan memperhatikan standar kebersihan dan keamanan pangan.</p>
-          <p>Mahasiswa yang terlibat dalam produksi telah mendapatkan pelatihan khusus mengenai Good Manufacturing Practice (GMP) dan sistem jaminan mutu pangan. Hal ini memastikan bahwa setiap produk yang dihasilkan memenuhi standar kualitas yang tinggi.</p>
-        `
+        image: 'produkmahasiswa.jpg',
+        content: `<p>Sarden SIP POLIJE merupakan produk pangan kaleng higienis yang dihasilkan oleh mahasiswa kompeten di bidang pengalengan ikan. Produk ini telah melalui berbagai tahapan produksi yang ketat dengan memperhatikan standar kebersihan dan keamanan pangan.</p><p>Mahasiswa yang terlibat dalam produksi telah mendapatkan pelatihan khusus mengenai Good Manufacturing Practice (GMP) dan sistem jaminan mutu pangan. Hal ini memastikan bahwa setiap produk yang dihasilkan memenuhi standar kualitas yang tinggi.</p>`
       },
       'kegiatan3': {
         title: 'Jamin mutu pangan: mahasiswa POLIJE pelajari proses krusial pengalengan ikan di mesin retort',
         category: 'Kegiatan',
         date: '5 November 2023',
-        image: '/proseskrusial.jpg', // FIXED
-        content: `
-          <p>Mahasiswa Politeknik Negeri Jember mempelajari proses krusial pengalengan ikan menggunakan mesin retort. Proses retorting merupakan tahap sterilisasi yang sangat penting dalam pengalengan untuk membunuh mikroorganisme berbahaya dan memastikan produk aman dikonsumsi.</p>
-          <p>Dalam kegiatan praktik ini, mahasiswa belajar mengoperasikan mesin retort dengan parameter yang tepat seperti suhu, tekanan, dan waktu sterilisasi. Pemahaman yang baik tentang proses ini sangat penting untuk menjamin mutu dan keamanan produk pangan kaleng.</p>
-        `
+        image: 'proseskrusial.jpg',
+        content: `<p>Mahasiswa Politeknik Negeri Jember mempelajari proses krusial pengalengan ikan menggunakan mesin retort. Proses retorting merupakan tahap sterilisasi yang sangat penting dalam pengalengan untuk membunuh mikroorganisme berbahaya dan memastikan produk aman dikonsumsi.</p><p>Dalam kegiatan praktik ini, mahasiswa belajar mengoperasikan mesin retort dengan parameter yang tepat seperti suhu, tekanan, dan waktu sterilisasi. Pemahaman yang baik tentang proses ini sangat penting untuk menjamin mutu dan keamanan produk pangan kaleng.</p>`
       },
       'kegiatan4': {
         title: 'TEFA POLIJE gelar praktik pengalengan ikan, terapkan standar higienis global',
         category: 'Kegiatan',
         date: '1 November 2023',
-        image: '/Praktik Pengalengan.jpg', // FIXED (huruf besar P)
-        content: `
-          <p>TEFA Polije menggelar praktik pengalengan ikan dengan menerapkan standar higienis global. Kegiatan ini melibatkan mahasiswa dalam seluruh proses produksi mulai dari persiapan bahan baku hingga pengemasan produk akhir.</p>
-          <p>Standar higienis global yang diterapkan meliputi penggunaan APD (Alat Pelindung Diri) yang lengkap, sanitasi area produksi, dan penerapan prinsip HACCP (Hazard Analysis Critical Control Point). Dengan standar ini, produk yang dihasilkan dapat memenuhi persyaratan pasar domestik maupun internasional.</p>
-        `
+        image: 'Praktik Pengalengan.jpg',
+        content: `<p>TEFA Polije menggelar praktik pengalengan ikan dengan menerapkan standar higienis global. Kegiatan ini melibatkan mahasiswa dalam seluruh proses produksi mulai dari persiapan bahan baku hingga pengemasan produk akhir.</p><p>Standar higienis global yang diterapkan meliputi penggunaan APD (Alat Pelindung Diri) yang lengkap, sanitasi area produksi, dan penerapan prinsip HACCP (Hazard Analysis Critical Control Point). Dengan standar ini, produk yang dihasilkan dapat memenuhi persyaratan pasar domestik maupun internasional.</p>`
       }
     };
 
-    // Fungsi untuk menampilkan detail berita
-    function showDetail(beritaId) {
-      const berita = beritaData[beritaId];
+    function showDetail(id) {
+      const data = beritaData[id];
+      if (!data) return;
       
-      if (berita) {
-        document.getElementById('detail-title').textContent = berita.title;
-        document.getElementById('detail-meta').textContent = `Tanggal: ${berita.date} | Kategori: ${berita.category}`;
-        document.getElementById('detail-image').src = berita.image;
-        document.getElementById('detail-image').alt = berita.title;
-        document.getElementById('detail-content').innerHTML = berita.content;
-        
-        // Hide kegiatan section and show detail
-        document.getElementById('kegiatan').classList.remove('active');
-        document.getElementById('detail-berita').classList.add('active');
-        
-        // Scroll ke atas
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-meta').innerHTML = `
+        <i class="fas fa-calendar-alt me-2"></i>Tanggal: <span class="fw-bold">${data.date}</span> | 
+        <i class="fas fa-tag ms-2 me-2"></i>Kategori: <span class="fw-bold">${data.category}</span>
+      `;
+      document.getElementById('detail-image').src = data.image;
+      document.getElementById('detail-content').innerHTML = data.content;
+      
+      document.getElementById('kegiatan').style.display = 'none';
+      document.getElementById('detail-berita').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Fungsi untuk menyembunyikan detail berita
     function hideDetail() {
-      // Kembali ke section kegiatan
-      document.getElementById('detail-berita').classList.remove('active');
-      document.getElementById('kegiatan').classList.add('active');
-      
-      // Scroll ke atas
+      document.getElementById('detail-berita').style.display = 'none';
+      document.getElementById('kegiatan').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

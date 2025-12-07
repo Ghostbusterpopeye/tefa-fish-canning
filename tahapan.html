@@ -1,178 +1,268 @@
+alat.html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tahapan Proses Pembuatan - TEFA Pengalengan Ikan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
-  <link rel="stylesheet" href="/style_proses.css"> <!-- FIXED -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Global Kustom -->
+  <link rel="stylesheet" href="style-global.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">BERANDA</a></li>
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
-        <li class="dropdown">
-          <a href="produk.html">PRODUK KAMI</a>
-          <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html">Informasi Keamanan</a>
-          </div>
+ <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logotefa.png" alt="Logo TEFA" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">BERANDA</a>
         </li>
-        <li class="dropdown">
-          <a href="tahapan.html" class="active">PROSES PEMBUATAN</a>
-          <div class="dropdown-content">
-            <a href="tahapan.html" class="active">Tahapan</a>
-            <a href="alat.html">Alat-Alat</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
         </li>
-        <li class="dropdown">
-          <a href="berita.html">BERITA</a>
-          <div class="dropdown-content">
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
-          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="produk.html" role="button" data-bs-toggle="dropdown">
+            PRODUK KAMI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produk.html">Detail Produk</a></li>
+            <li><a class="dropdown-item" href="informasi.html">Informasi Keamanan</a></li>
+          </ul>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="tahapan.html" role="button" data-bs-toggle="dropdown">
+            PROSES PEMBUATAN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="tahapan.html">Tahapan</a></li>
+            <li><a class="dropdown-item" href="alat.html">Alat-Alat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kegiatan.html" role="button" data-bs-toggle="dropdown">
+            BERITA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kegiatan.html">Kegiatan</a></li>
+            <li><a class="dropdown-item" href="inovasi.html">Inovasi</a></li>
+            <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">KONTAK</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+</nav>
 
-  <!-- Konten Utama -->
-  <main>
-    <div class="container">
-      <h1 class="page-title">Tahapan Proses Pembuatan</h1>
+  <main class="py-5">
+    <div class="container-custom">
+      <h1 class="page-title">Tahapan</h1>
 
-      <!-- Navigasi antar sub-halaman -->
-      <div class="news-nav">
-        <a href="tahapan.html" class="news-nav-item active">
-          <i class="fas fa-list-ol"></i> Tahapan
-        </a>
-        <a href="alat.html" class="news-nav-item">
-          <i class="fas fa-tools"></i> Alat-Alat
-        </a>
-      </div>
+  <!-- Navigasi Sub-Halaman - Dengan Jarak dari Header -->
+<div class="d-flex flex-wrap justify-content-center align-items-center mt-4 mb-5 gap-3">
+  <a href="tahapan.html" class="btn btn-primary d-flex align-items-center">
+    <i class="fas fa-list-ol me-2"></i> Tahapan
+  </a>
+  <a href="alat.html" class="btn btn-outline-primary d-flex align-items-center">
+    <i class="fas fa-tools me-2"></i> Alat-Alat
+  </a>
+</div>
+
+<div class="d-flex flex-wrap justify-content-center align-items-center mt-5 mb-5 gap-3">
+
+
 
       <!-- Daftar Tahapan -->
-      <section id="tahapan-list" class="news-section active">
-        <div class="news-grid">
-          <div class="news-item" onclick="showDetail('t1')">
-            <div class="news-image">
-              <img src="/Praktik Pengalengan.jpg" alt="Penyortiran Ikan"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
-              <h3 class="news-title">Penyortiran Ikan</h3>
-              <p class="news-summary">Ikan lemuru segar dipilih berdasarkan ukuran dan kualitas.</p>
-              <div class="news-date">Tahap 1</div>
-            </div>
-          </div>
-          <div class="news-item" onclick="showDetail('t2')">
-            <div class="news-image">
-              <img src="/produkmahasiswa.jpg" alt="Pengisian Kaleng"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
-              <h3 class="news-title">Pengisian Kaleng</h3>
-              <p class="news-summary">Ikan dimasukkan ke dalam kaleng food-grade secara manual.</p>
-              <div class="news-date">Tahap 2</div>
+      <section id="tahapan-list" class="active">
+        <div class="row g-4">
+          <!-- Tahap 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('t1')" style="cursor: pointer;">
+              <img src="Praktik Pengalengan.jpg" class="card-img-top" alt="Penyortiran Ikan" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Tahap 1</span>
+                <h5 class="card-title text-red">Penyortiran Ikan</h5>
+                <p class="card-text flex-grow-1">Ikan lemuru segar dipilih berdasarkan ukuran dan kualitas.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('t3')">
-            <div class="news-image">
-              <img src="/foto tahapan pemberian saus.jpg" alt="Pemberian Saus"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
-              <h3 class="news-title">Pemberian Saus</h3>
-              <p class="news-summary">Saus tomat, cabai, atau larutan garam ditambahkan sesuai jenis produk.</p>
-              <div class="news-date">Tahap 3</div>
+
+          <!-- Tahap 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('t2')" style="cursor: pointer;">
+              <img src="produkmahasiswa.jpg" class="card-img-top" alt="Pengisian Kaleng" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Tahap 2</span>
+                <h5 class="card-title text-red">Pengisian Kaleng</h5>
+                <p class="card-text flex-grow-1">Ikan dimasukkan ke dalam kaleng food-grade secara manual.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('t4')">
-            <div class="news-image">
-              <img src="/proseskrusial.jpg" alt="Sterilisasi"> <!-- FIXED -->
+
+          <!-- Tahap 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('t3')" style="cursor: pointer;">
+              <img src="foto tahapan pemberian saus.jpg" class="card-img-top" alt="Pemberian Saus" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Tahap 3</span>
+                <h5 class="card-title text-red">Pemberian Saus</h5>
+                <p class="card-text flex-grow-1">Saus tomat, cabai, atau larutan garam ditambahkan sesuai jenis produk.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Tahapan</span></div>
-              <h3 class="news-title">Sterilisasi (Retorting)</h3>
-              <p class="news-summary">Kaleng dipanaskan pada suhu tinggi untuk sterilisasi komersial.</p>
-              <div class="news-date">Tahap 4</div>
+          </div>
+
+          <!-- Tahap 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('t4')" style="cursor: pointer;">
+              <img src="proseskrusial.jpg" class="card-img-top" alt="Sterilisasi" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start">Tahap 4</span>
+                <h5 class="card-title text-red">Sterilisasi (Retorting)</h5>
+                <p class="card-text flex-grow-1">Kaleng dipanaskan pada suhu tinggi untuk sterilisasi komersial.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Detail Tahapan (sembunyi secara default) -->
-      <section id="detail-tahapan" class="news-section">
-        <div class="berita-detail">
-          <h2 id="detail-title" class="page-title">Judul Tahapan</h2>
-          <div class="meta" id="detail-meta">Tahap: | Kategori: Tahapan</div>
-          <img id="detail-image" src="" alt="Gambar Tahapan" class="img-fluid">
-          <div class="content" id="detail-content"></div>
-          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
-            <i class="fas fa-arrow-left"></i> Kembali ke Tahapan
-          </a>
+      <!-- Detail Tahapan -->
+      <section id="detail-tahapan" class="mt-5" style="display: none;">
+        <div class="card shadow-red">
+          <div class="card-body p-4">
+            <h2 id="detail-title" class="card-title text-center mb-3 text-red">Judul Tahapan</h2>
+            <div class="text-muted text-center mb-4" id="detail-meta">
+              <i class="fas fa-layer-group me-2"></i>Tahap: <span class="fw-bold">1</span> | 
+              <i class="fas fa-cogs ms-2 me-2"></i>Kategori: <span class="fw-bold">Tahapan</span>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <img id="detail-image" src="" alt="Gambar Tahapan" class="img-fluid rounded shadow-sm">
+              </div>
+              <div class="col-md-6">
+                <div id="detail-content" class="mb-4"></div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-secondary btn-lg" onclick="hideDetail(); return false;">
+                <i class="fas fa-arrow-left me-2"></i> Kembali ke Tahapan
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> 
-          <img src="/Logosip.png" alt="Logo 2"> 
-          <img src="/Logotefa.png" alt="Logo 3"> 
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+  <!-- FOOTER -->
+ <!-- FOOTER -->
+<footer>
+  <div class="container-custom">
+    <!-- Logo + Nama - Sejajar Horizontal -->
+    <div class="row align-items-center mb-4">
+      <div class="col-auto d-flex align-items-center gap-3">
+        <img src="logopolije.png" alt="Logo Polije" height="50">
+        <img src="Logosip.png" alt="Logo SIP" height="50">
+        <img src="Logotefa.png" alt="Logo TEFA" height="50">
       </div>
-      <div class="footer-menu">
-        <div class="footer-menu-column">
-          <h4>Alamat</h4>
-          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Tentang kami</h4>
-          <a href="tentang.html">Sejarah</a>
-          <a href="tentang.html">Visi misi</a>
-          <a href="tentang.html">Tentang Sarden</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Produk Kami</h4>
-          <a href="produk.html">Detail produk</a>
-          <a href="informasi.html">Informasi keamanan produk</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Proses pembuatan</h4>
-          <a href="tahapan.html">Tahapan</a>
-          <a href="alat.html">Alat alat</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Berita</h4>
-          <a href="kegiatan.html">Kegiatan</a>
-          <a href="inovasi.html">Inovasi</a>
-          <a href="pencapaian.html">Pencapaian</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Kontak</h4>
-          <a href="kontak.html">Hubungi Kami</a>
+      <div class="col-auto">
+        <span style="font-weight: 600; font-size: 1.1rem; color: white;">Tefa Pengalengan Ikan</span>
+      </div>
+    </div>
+
+    <!-- Menu Footer -->
+    <div class="row text-white">
+      <!-- Kolom 1: Alamat -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Alamat</h5>
+        <p class="small" style="color: white !important; line-height: 1.6;">
+          Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>
+          Lingkungan Panji, Tegalgede,<br>
+          Kec. Sumbersari, Kabupaten Jember,<br>
+          Jawa Timur 68124<br>
+          Politeknik Negeri Jember
+        </p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Tentang kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Sejarah</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Visi misi</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tentang Sarden</a></li>
+          <li class="mt-2"><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Produk Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Produk Kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="produk.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Detail produk</a></li>
+          <li><a href="informasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Informasi keamanan produk</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Proses Pembuatan -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Proses pembuatan</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tahapan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tahapan</a></li>
+          <li><a href="alat.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Alat alat</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 5: Berita & Kontak -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="row">
+          <!-- Sub-Kolom 1: Berita -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Berita</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kegiatan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Kegiatan</a></li>
+              <li><a href="inovasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Inovasi</a></li>
+              <li><a href="pencapaian.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Pencapaian</a></li>
+            </ul>
+          </div>
+          <!-- Sub-Kolom 2: Kontak -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Kontak</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
+
+    <!-- Tagline -->
+    <div class="text-center">
+      <h4 style="color: white !important; font-family: 'Brush Script MT', cursive, sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Smart, Innovative, Professional
+      </h4>
     </div>
-  </footer>
+  </div>
+</footer>
+
 
   <!-- JavaScript Interaktif -->
   <script>
@@ -180,26 +270,70 @@
       t1: {
         title: "Penyortiran Ikan",
         stage: "1",
-        image: "/Praktik Pengalengan.jpg", 
-        content: `<p>Ikan lemuru segar diterima dari nelayan dan langsung dipilih berdasarkan ukuran, kesegaran, dan kondisi fisik. Proses ini memastikan konsistensi kualitas produk akhir.</p><p>Ikan yang lolos seleksi dicuci bersih dan disiapkan untuk tahap pengalengan.</p>`
+        image: "Praktik Pengalengan.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-fish me-2"></i>Proses Penyortiran</h4>
+          <p style="text-align: justify; line-height: 1.8;">Ikan lemuru segar diterima dari nelayan dan langsung dipilih berdasarkan ukuran, kesegaran, dan kondisi fisik. Proses ini memastikan konsistensi kualitas produk akhir.</p>
+          <p style="text-align: justify; line-height: 1.8;">Ikan yang lolos seleksi dicuci bersih dan disiapkan untuk tahap pengalengan.</p>
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-clipboard-check me-2"></i>Kriteria Seleksi</h5>
+          <ul>
+            <li>Ukuran ikan: 12-15 cm</li>
+            <li>Kesegaran: Mata jernih, insang merah</li>
+            <li>Kondisi fisik: Tidak rusak atau cacat</li>
+            <li>Bau: Segar khas ikan laut</li>
+          </ul>
+        `
       },
       t2: {
         title: "Pengisian Kaleng",
         stage: "2",
-        image: "/produkmahasiswa.jpg", 
-        content: `<p>Ikan dimasukkan ke dalam kaleng baja food-grade secara manual oleh mahasiswa. Kapasitas disesuaikan dengan standar berat bersih 425 gram.</p><p>Setiap kaleng diperiksa untuk memastikan tidak ada kebocoran sebelum tahap selanjutnya.</p>`
+        image: "produkmahasiswa.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-box-open me-2"></i>Proses Pengisian</h4>
+          <p style="text-align: justify; line-height: 1.8;">Ikan dimasukkan ke dalam kaleng baja food-grade secara manual oleh mahasiswa. Kapasitas disesuaikan dengan standar berat bersih 425 gram.</p>
+          <p style="text-align: justify; line-height: 1.8;">Setiap kaleng diperiksa untuk memastikan tidak ada kebocoran sebelum tahap selanjutnya.</p>
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-info-circle me-2"></i>Spesifikasi Kaleng</h5>
+          <ul>
+            <li>Material: Baja food-grade</li>
+            <li>Ukuran: 425 gram</li>
+            <li>Lapisan dalam: Food-safe coating</li>
+            <li>Standar: SNI 3223:2022</li>
+          </ul>
+        `
       },
       t3: {
         title: "Pemberian Saus",
         stage: "3",
-        image: "/foto tahapan pemberian saus.jpg", 
-        content: `<p>Saus tomat, saus cabai, atau larutan garam ditambahkan sesuai jenis produk. Semua saus dibuat dari bahan alami tanpa pengawet.</p><p>Resep khas ini merupakan hasil riset mahasiswa Politeknik Negeri Jember.</p>`
+        image: "foto tahapan pemberian saus.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-pepper-hot me-2"></i>Proses Pemberian Saus</h4>
+          <p style="text-align: justify; line-height: 1.8;">Saus tomat, saus cabai, atau larutan garam ditambahkan sesuai jenis produk. Semua saus dibuat dari bahan alami tanpa pengawet.</p>
+          <p style="text-align: justify; line-height: 1.8;">Resep khas ini merupakan hasil riset mahasiswa Politeknik Negeri Jember.</p>
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-flask me-2"></i>Komposisi Saus</h5>
+          <ul>
+            <li>Saus Tomat: Tomat segar, rempah alami</li>
+            <li>Saus Cabai: Cabai merah, bawang, rempah</li>
+            <li>Asin: Larutan garam food-grade</li>
+            <li>Tanpa pengawet buatan</li>
+          </ul>
+        `
       },
       t4: {
         title: "Sterilisasi (Retorting)",
         stage: "4",
-        image: "/proseskrusial.jpg", 
-        content: `<p>Kaleng dimasukkan ke mesin retort dan dipanaskan pada suhu 115–121°C selama 60–90 menit. Proses ini membunuh semua mikroorganisme berbahaya.</p><p>Produk menjadi aman, awet, dan siap dipasarkan tanpa perlu pendinginan.</p>`
+        image: "proseskrusial.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-temperature-high me-2"></i>Proses Sterilisasi</h4>
+          <p style="text-align: justify; line-height: 1.8;">Kaleng dimasukkan ke mesin retort dan dipanaskan pada suhu 115–121°C selama 60–90 menit. Proses ini membunuh semua mikroorganisme berbahaya termasuk Clostridium botulinum.</p>
+          <p style="text-align: justify; line-height: 1.8;">Produk menjadi aman, awet, dan siap dipasarkan tanpa perlu pendinginan.</p>
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-cog me-2"></i>Parameter Sterilisasi</h5>
+          <ul>
+            <li>Suhu: 115–121°C</li>
+            <li>Waktu: 60–90 menit</li>
+            <li>Tekanan: 1.2–1.5 bar</li>
+            <li>Standar: Sterilisasi komersial</li>
+          </ul>
+        `
       }
     };
 
@@ -208,20 +342,26 @@
       if (!data) return;
       
       document.getElementById('detail-title').textContent = data.title;
-      document.getElementById('detail-meta').textContent = `Tahap: ${data.stage} | Kategori: Tahapan`;
+      document.getElementById('detail-meta').innerHTML = `
+        <i class="fas fa-layer-group me-2"></i>Tahap: <span class="fw-bold">${data.stage}</span> | 
+        <i class="fas fa-cogs ms-2 me-2"></i>Kategori: <span class="fw-bold">Tahapan</span>
+      `;
       document.getElementById('detail-image').src = data.image;
       document.getElementById('detail-content').innerHTML = data.content;
       
-      document.getElementById('tahapan-list').classList.remove('active');
-      document.getElementById('detail-tahapan').classList.add('active');
+      document.getElementById('tahapan-list').style.display = 'none';
+      document.getElementById('detail-tahapan').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function hideDetail() {
-      document.getElementById('detail-tahapan').classList.remove('active');
-      document.getElementById('tahapan-list').classList.add('active');
+      document.getElementById('detail-tahapan').style.display = 'none';
+      document.getElementById('tahapan-list').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

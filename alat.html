@@ -1,200 +1,374 @@
+alat.html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="webtoken" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alat-Alat Produksi - TEFA Pengalengan Ikan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/style_proses.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Global Kustom -->
+  <link rel="stylesheet" href="style-global.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">BERANDA</a></li> <!-- FIXED: hapus spasi -->
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
-        <li class="dropdown">
-          <a href="produk.html">PRODUK KAMI</a>
-          <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html">Informasi Keamanan</a>
-          </div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logotefa.png" alt="Logo TEFA" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">BERANDA</a>
         </li>
-        <li class="dropdown">
-          <a href="tahapan.html" class="active">PROSES PEMBUATAN</a>
-          <div class="dropdown-content">
-            <a href="tahapan.html">Tahapan</a>
-            <a href="alat.html" class="active">Alat-Alat</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
         </li>
-        <li class="dropdown">
-          <a href="berita.html">BERITA</a>
-          <div class="dropdown-content">
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
-          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="produk.html" role="button" data-bs-toggle="dropdown">
+            PRODUK KAMI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produk.html">Detail Produk</a></li>
+            <li><a class="dropdown-item" href="informasi.html">Informasi Keamanan</a></li>
+          </ul>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="tahapan.html" role="button" data-bs-toggle="dropdown">
+            PROSES PEMBUATAN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tahapan.html">Tahapan</a></li>
+            <li><a class="dropdown-item active" href="alat.html">Alat-Alat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kegiatan.html" role="button" data-bs-toggle="dropdown">
+            BERITA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kegiatan.html">Kegiatan</a></li>
+            <li><a class="dropdown-item" href="inovasi.html">Inovasi</a></li>
+            <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">KONTAK</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+</nav>
 
-  <main>
-    <div class="container">
+  <!-- MAIN CONTENT -->
+  <main class="py-5">
+    <div class="container-custom">
       <h1 class="page-title">Alat-Alat Produksi</h1>
 
-      <div class="news-nav">
-        <a href="tahapan.html" class="news-nav-item">
-          <i class="fas fa-list-ol"></i> Tahapan
+      <!-- Navigasi Sub-Halaman -->
+      <div class="d-flex justify-content-center mb-5 gap-2">
+        <a href="tahapan.html" class="btn btn-outline-primary">
+          <i class="fas fa-list-ol me-2"></i> Tahapan
         </a>
-        <a href="alat.html" class="news-nav-item active">
-          <i class="fas fa-tools"></i> Alat-Alat
+        <a href="alat.html" class="btn btn-primary">
+          <i class="fas fa-tools me-2"></i> Alat-Alat
         </a>
       </div>
 
-      <section id="alat-list" class="news-section active">
-        <div class="news-grid">
-          <div class="news-item" onclick="showDetail('a1')">
-            <div class="news-image">
-              <img src="/foto alat penutup kaleng.jpg" alt="Mesin Penutup Kaleng"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
-              <h3 class="news-title">Mesin Penutup Kaleng</h3>
-              <p class="news-summary">Menutup kaleng secara rapat dan kedap udara.</p>
-              <div class="news-date">Alat #1</div>
-            </div>
-          </div>
-          <div class="news-item" onclick="showDetail('a2')">
-            <div class="news-image">
-              <img src="/foto alat sterilisasi.jpg" alt="Mesin Retort"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
-              <h3 class="news-title">Mesin Retort</h3>
-              <p class="news-summary">Sterilisasi kaleng pada suhu tinggi untuk membunuh mikroorganisme.</p>
-              <div class="news-date">Alat #2</div>
+      <!-- Daftar Alat -->
+      <section id="alat-list" class="active">
+        <div class="row g-4">
+          <!-- Alat 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('a1')" style="cursor: pointer;">
+              <img src="foto alat penutup kaleng.jpg" class="card-img-top" alt="Mesin Penutup Kaleng" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Alat Produksi</span>
+                <h5 class="card-title text-red">Mesin Penutup Kaleng</h5>
+                <p class="card-text flex-grow-1">Menutup kaleng secara rapat dan kedap udara.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('a3')">
-            <div class="news-image">
-              <img src="/foto alat pencuci ikan.jpg" alt="Mesin Pencuci Ikan"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
-              <h3 class="news-title">Mesin Pencuci Ikan</h3>
-              <p class="news-summary">Membersihkan ikan dari kotoran, lender, dan darah.</p>
-              <div class="news-date">Alat #3</div>
+
+          <!-- Alat 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('a2')" style="cursor: pointer;">
+              <img src="foto alat sterilisasi.jpg" class="card-img-top" alt="Mesin Retort" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Alat Produksi</span>
+                <h5 class="card-title text-red">Mesin Retort</h5>
+                <p class="card-text flex-grow-1">Sterilisasi kaleng pada suhu tinggi untuk membunuh mikroorganisme.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('a4')">
-            <div class="news-image">
-              <img src="/foto alat peniris ikan.jpg" alt="Mesin Peniris Ikan"> <!-- FIXED -->
+
+          <!-- Alat 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('a3')" style="cursor: pointer;">
+              <img src="foto alat pencuci ikan.jpg" class="card-img-top" alt="Mesin Pencuci Ikan" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Alat Produksi</span>
+                <h5 class="card-title text-red">Mesin Pencuci Ikan</h5>
+                <p class="card-text flex-grow-1">Membersihkan ikan dari kotoran, lendir, dan darah.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Alat Produksi</span></div>
-              <h3 class="news-title">Mesin Peniris Ikan</h3>
-              <p class="news-summary">Mengurangi kadar air berlebih agar ikan lebih kering.</p>
-              <div class="news-date">Alat #4</div>
+          </div>
+
+          <!-- Alat 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('a4')" style="cursor: pointer;">
+              <img src="foto alat peniris ikan.jpg" class="card-img-top" alt="Mesin Peniris Ikan" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Alat Produksi</span>
+                <h5 class="card-title text-red">Mesin Peniris Ikan</h5>
+                <p class="card-text flex-grow-1">Mengurangi kadar air berlebih agar ikan lebih kering.</p>
+                <button class="btn btn-sm btn-outline-primary mt-2">Lihat Detail</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="detail-alat" class="news-section">
-        <div class="berita-detail">
-          <h2 id="detail-title" class="page-title">Judul Alat</h2>
-          <div class="meta" id="detail-meta">ID: | Kategori: Alat Produksi</div>
-          <img id="detail-image" src="" alt="Gambar Alat" class="img-fluid">
-          <div class="content" id="detail-content"></div>
-          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
-            <i class="fas fa-arrow-left"></i> Kembali ke Alat-Alat
-          </a>
+      <!-- Detail Alat -->
+      <section id="detail-alat" class="mt-5" style="display: none;">
+        <div class="card shadow-red">
+          <div class="card-body p-4">
+            <h2 id="detail-title" class="card-title text-center mb-3 text-red">Judul Alat</h2>
+            <div class="text-muted text-center mb-4" id="detail-meta">
+              <i class="fas fa-tools me-2"></i>ID: <span class="fw-bold">1</span> | 
+              <i class="fas fa-cog ms-2 me-2"></i>Kategori: <span class="fw-bold">Alat Produksi</span>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <img id="detail-image" src="" alt="Gambar Alat" class="img-fluid rounded shadow-sm">
+              </div>
+              <div class="col-md-6">
+                <div id="detail-content" class="mb-4"></div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-secondary btn-lg" onclick="hideDetail(); return false;">
+                <i class="fas fa-arrow-left me-2"></i> Kembali ke Alat-Alat
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </main>
 
-  <!-- Footer-->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
-          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
-          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+  <!-- FOOTER -->
+ <!-- FOOTER -->
+<footer>
+  <div class="container-custom">
+    <!-- Logo + Nama - Sejajar Horizontal -->
+    <div class="row align-items-center mb-4">
+      <div class="col-auto d-flex align-items-center gap-3">
+        <img src="logopolije.png" alt="Logo Polije" height="50">
+        <img src="Logosip.png" alt="Logo SIP" height="50">
+        <img src="Logotefa.png" alt="Logo TEFA" height="50">
       </div>
-      <div class="footer-menu">
-        <div class="footer-menu-column">
-          <h4>Alamat</h4>
-          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Tentang kami</h4>
-          <a href="tentang.html">Sejarah</a>
-          <a href="tentang.html">Visi misi</a>
-          <a href="tentang.html">Tentang Sarden</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Produk Kami</h4>
-          <a href="produk.html">Detail produk</a>
-          <a href="informasi.html">Informasi keamanan produk</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Proses pembuatan</h4>
-          <a href="tahapan.html">Tahapan</a>
-          <a href="alat.html">Alat alat</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Berita</h4>
-          <a href="kegiatan.html">Kegiatan</a>
-          <a href="inovasi.html">Inovasi</a>
-          <a href="pencapaian.html">Pencapaian</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Kontak</h4>
-          <a href="kontak.html">Hubungi Kami</a>
-        </div>
+      <div class="col-auto">
+        <span style="font-weight: 600; font-size: 1.1rem; color: white;">Tefa Pengalengan Ikan</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
-    </div>
-  </footer>
 
+    <!-- Menu Footer -->
+    <div class="row text-white">
+      <!-- Kolom 1: Alamat -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Alamat</h5>
+        <p class="small" style="color: white !important; line-height: 1.6;">
+          Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>
+          Lingkungan Panji, Tegalgede,<br>
+          Kec. Sumbersari, Kabupaten Jember,<br>
+          Jawa Timur 68124<br>
+          Politeknik Negeri Jember
+        </p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Tentang kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Sejarah</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Visi misi</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tentang Sarden</a></li>
+          <li class="mt-2"><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Produk Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Produk Kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="produk.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Detail produk</a></li>
+          <li><a href="informasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Informasi keamanan produk</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Proses Pembuatan -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Proses pembuatan</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tahapan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tahapan</a></li>
+          <li><a href="alat.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Alat alat</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 5: Berita & Kontak -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="row">
+          <!-- Sub-Kolom 1: Berita -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Berita</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kegiatan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Kegiatan</a></li>
+              <li><a href="inovasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Inovasi</a></li>
+              <li><a href="pencapaian.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Pencapaian</a></li>
+            </ul>
+          </div>
+          <!-- Sub-Kolom 2: Kontak -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Kontak</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class="text-center">
+      <h4 style="color: white !important; font-family: 'Brush Script MT', cursive, sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Smart, Innovative, Professional
+      </h4>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript Interaktif -->
   <script>
     const alatData = {
       a1: {
         title: "Mesin Penutup Kaleng",
         id: "1",
-        image: "/foto alat penutup kaleng.jpg", // FIXED
-        content: `<p>Berfungsi menutup kaleng secara rapat dan kedap udara sehingga isi terlindungi dari kontaminasi.</p><p>Proses ini kritis agar produk tidak rusak selama sterilisasi atau penyimpanan.</p>`
+        image: "foto alat penutup kaleng.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-info-circle me-2"></i>Fungsi Utama</h4>
+          <p style="text-align: justify; line-height: 1.8;">Berfungsi menutup kaleng secara rapat dan kedap udara sehingga isi terlindungi dari kontaminasi. Proses ini kritis agar produk tidak rusak selama sterilisasi atau penyimpanan.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-cogs me-2"></i>Spesifikasi Teknis</h5>
+          <ul>
+            <li>Jenis: Automatic Can Seamer</li>
+            <li>Kapasitas: 50-60 kaleng/menit</li>
+            <li>Sistem: Double seaming</li>
+            <li>Material: Stainless steel 304</li>
+            <li>Power: 2.2 kW</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-shield-alt me-2"></i>Keunggulan</h5>
+          <ul>
+            <li>Hasil penutupan sangat rapat</li>
+            <li>Mencegah kebocoran udara</li>
+            <li>Operasi mudah dan aman</li>
+            <li>Maintenance minimal</li>
+          </ul>
+        `
       },
       a2: {
         title: "Mesin Retort",
         id: "2",
-        image: "/foto alat sterilisasi.jpg", // FIXED
-        content: `<p>Memastikan sterilisasi komersial dengan pemanasan 115–121°C selama 60–90 menit.</p><p>Membunuh semua bakteri berbahaya termasuk <em>Clostridium botulinum</em>.</p>`
+        image: "foto alat sterilisasi.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-info-circle me-2"></i>Fungsi Utama</h4>
+          <p style="text-align: justify; line-height: 1.8;">Memastikan sterilisasi komersial dengan pemanasan 115–121°C selama 60–90 menit. Membunuh semua bakteri berbahaya termasuk <em>Clostridium botulinum</em>.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-cogs me-2"></i>Spesifikasi Teknis</h5>
+          <ul>
+            <li>Jenis: Horizontal Retort</li>
+            <li>Kapasitas: 1000 kaleng/batch</li>
+            <li>Suhu maksimal: 135°C</li>
+            <li>Tekanan kerja: 0-3 bar</li>
+            <li>Material: Stainless steel 316L</li>
+            <li>Kontrol: PLC Automatic</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-thermometer-half me-2"></i>Parameter Sterilisasi</h5>
+          <ul>
+            <li>Suhu sterilisasi: 115-121°C</li>
+            <li>Waktu proses: 60-90 menit</li>
+            <li>Cooling time: 30-45 menit</li>
+            <li>F0 value: >3 menit</li>
+          </ul>
+        `
       },
       a3: {
         title: "Mesin Pencuci Ikan",
         id: "3",
-        image: "/foto alat pencuci ikan.jpg", // FIXED
-        content: `<p>Membersihkan ikan dari kotoran, lendir, dan darah menggunakan air mengalir dan sikat putar lembut.</p><p>Menjamin higienitas bahan baku dan mengurangi bau amis.</p>`
+        image: "foto alat pencuci ikan.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-info-circle me-2"></i>Fungsi Utama</h4>
+          <p style="text-align: justify; line-height: 1.8;">Membersihkan ikan dari kotoran, lendir, dan darah menggunakan air mengalir dan sikat putar lembut. Menjamin higienitas bahan baku dan mengurangi bau amis.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-cogs me-2"></i>Spesifikasi Teknis</h5>
+          <ul>
+            <li>Jenis: Brush Type Washer</li>
+            <li>Kapasitas: 200 kg/jam</li>
+            <li>Sistem: Rotating brush + spray</li>
+            <li>Material: Stainless steel 304</li>
+            <li>Water pressure: 3-5 bar</li>
+            <li>Power: 1.5 kW</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-water me-2"></i>Proses Pencucian</h5>
+          <ul>
+            <li>Pre-wash dengan air dingin</li>
+            <li>Brush cleaning untuk lendir</li>
+            <li>High pressure spray</li>
+            <li>Final rinse dengan air bersih</li>
+          </ul>
+        `
       },
       a4: {
         title: "Mesin Peniris Ikan",
         id: "4",
-        image: "/foto alat peniris ikan.jpg", // FIXED
-        content: `<p>Mengurangi kadar air berlebih setelah pencucian menggunakan sistem putaran atau rak berlubang.</p><p>Memastikan rasio ikan-saus dalam kaleng tetap optimal.</p>`
+        image: "foto alat peniris ikan.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-info-circle me-2"></i>Fungsi Utama</h4>
+          <p style="text-align: justify; line-height: 1.8;">Mengurangi kadar air berlebih setelah pencucian menggunakan sistem putaran atau rak berlubang. Memastikan rasio ikan-saus dalam kaleng tetap optimal.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-cogs me-2"></i>Spesifikasi Teknis</h5>
+          <ul>
+            <li>Jenis: Centrifugal Drainer</li>
+            <li>Kapasitas: 150 kg/batch</li>
+            <li>Speed: 600-800 RPM</li>
+            <li>Material: Stainless steel 304</li>
+            <li>Timer: 5-15 menit</li>
+            <li>Power: 1.1 kW</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-droplet me-2"></i>Hasil Penirisan</h5>
+          <ul>
+            <li>Kadar air turun 70-80%</li>
+            <li>Permukaan ikan lebih kering</li>
+            <li>Siap untuk pengisian kaleng</li>
+            <li>Mengurangi pengenceran saus</li>
+          </ul>
+        `
       }
     };
 
@@ -203,20 +377,26 @@
       if (!data) return;
       
       document.getElementById('detail-title').textContent = data.title;
-      document.getElementById('detail-meta').textContent = `ID: ${data.id} | Kategori: Alat Produksi`;
+      document.getElementById('detail-meta').innerHTML = `
+        <i class="fas fa-tools me-2"></i>ID: <span class="fw-bold">${data.id}</span> | 
+        <i class="fas fa-cog ms-2 me-2"></i>Kategori: <span class="fw-bold">Alat Produksi</span>
+      `;
       document.getElementById('detail-image').src = data.image;
       document.getElementById('detail-content').innerHTML = data.content;
       
-      document.getElementById('alat-list').classList.remove('active');
-      document.getElementById('detail-alat').classList.add('active');
+      document.getElementById('alat-list').style.display = 'none';
+      document.getElementById('detail-alat').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function hideDetail() {
-      document.getElementById('detail-alat').classList.remove('active');
-      document.getElementById('alat-list').classList.add('active');
+      document.getElementById('detail-alat').style.display = 'none';
+      document.getElementById('alat-list').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

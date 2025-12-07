@@ -1,148 +1,250 @@
+index.html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TEFA Pengalengan Ikan - Beranda</title>
-  <link rel="stylesheet" href="/style.css" /> <!-- FIXED -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Global Kustom -->
+  <link rel="stylesheet" href="style-global.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">BERANDA</a></li>
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
-        <li class="dropdown">
-          <a href="produk.html">PRODUK KAMI</a>
-          <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html">Informasi Keamanan</a>
-          </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <!-- Logo SIP di pojok kiri -->
+    <a class="navbar-brand" href="index.html">
+      <img src="Logotefa.png" alt="Logo SIP" height="50">
+    </a>
+    
+    <!-- Hamburger untuk mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Menu Navbar -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <!-- BERANDA aktif → berwarna kuning -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">BERANDA</a>
         </li>
-        <li class="dropdown">
-          <a href="tahapan.html">PROSES PEMBUATAN</a>
-          <div class="dropdown-content">
-            <a href="tahapan.html">Tahapan</a>
-            <a href="alat.html">Alat-Alat</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
         </li>
-        <li class="dropdown">
-          <a href="kegiatan.html">BERITA</a>
-          <div class="dropdown-content">
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
-          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="produk.html" role="button" data-bs-toggle="dropdown">
+            PRODUK KAMI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produk.html">Detail Produk</a></li>
+            <li><a class="dropdown-item" href="informasi.html">Informasi Keamanan</a></li>
+          </ul>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="tahapan.html" role="button" data-bs-toggle="dropdown">
+            PROSES PEMBUATAN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tahapan.html">Tahapan</a></li>
+            <li><a class="dropdown-item" href="alat.html">Alat-Alat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kegiatan.html" role="button" data-bs-toggle="dropdown">
+            BERITA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kegiatan.html">Kegiatan</a></li>
+            <li><a class="dropdown-item" href="inovasi.html">Inovasi</a></li>
+            <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">KONTAK</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-image">
-      <h2>TEFA PENGALENGAN IKAN POLIJE</h2>
-      <img src="/Gambartefapengalenganikan.jpg" alt="Gedung Tefa Polije"> <!-- FIXED -->
     </div>
-    <p class="hero-text">Teaching Factory (Tefa) adalah konsep pengajaran berbasis standar industri dalam lingkungan nyata. Di Politeknik Negeri Jember (Polije), nyata dari industri ini dalam suasana nyata. Di Politeknik Negeri Jember (Polije) terdapat Tefa Canning yang memproduksi pangan kaleng, salah satunya ikan lemuru</p>
-  </section>
+  </div>
+</nav>
 
-  <main>
-    <div class="container">
-      <div class="products">
-        <h2 class="page-title">PRODUK KAMI</h2>
-        <div class="product-grid">
-          <!-- Produk 1 -->
-          <a href="produk.html#p1" class="product-card-link">
-            <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Tomat"> <!-- FIXED -->
-              <h3>Sarden SIP Saus Tomat</h3>
-              <p>Sehat lezat dan Bergizi</p>
+<!-- MAIN CONTENT -->
+<main class="py-4">
+  <div class="container-custom">
+
+    <!-- Judul Merah di Tengah -->
+    <h2 class="text-center text-red mb-4" style="font-weight: bold; font-size: 1.8rem;">
+      TEFA CANNING POLIJE
+    </h2>
+
+    <!-- Gambar Gedung -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img src="Gambartefapengalenganikan.jpg" alt="Gedung Tefa Polije" class="img-fluid rounded shadow-sm" style="border: 2px solid #ddd;">
+      </div>
+    </div>
+
+    <!-- Deskripsi Singkat -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <p class="text-center" style="line-height: 1.8; color: #555; font-size: 0.95rem;">
+          Teaching Factory (Tefa) adalah konsep pengajaran berbasis standar industri dalam lingkungan nyata. Di Politeknik Negeri Jember (Polije), terdapat Tefa Canning yang memproduksi pangan kaleng, salah satunya ikan lemuru.
+        </p>
+      </div>
+    </div>
+
+    <!-- PRODUK KAMI -->
+    <div class="mt-5">
+      <h2 class="page-title">PRODUK KAMI</h2>
+      <div class="row g-4">
+        <!-- Produk 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="produk.html#p1" class="text-decoration-none">
+            <div class="card product-card shadow-sm">
+              <img src="sarden_saos_tomat.png" alt="Sarden Saus Tomat" class="card-img-top">
+              <div class="card-body text-center">
+                <span class="badge bg-primary mb-2">Produk Unggulan</span>
+                <h3 class="card-title">Sarden SIP Saus Tomat</h3>
+                <p class="card-text text-muted">Sehat, lezat, dan bergizi</p>
+                <small class="text-muted"><strong>425gr</strong></small>
+              </div>
             </div>
           </a>
+        </div>
 
-          <!-- Produk 2 -->
-          <a href="produk.html#p2" class="product-card-link">
-            <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Asin"> <!-- FIXED -->
-              <h3>Sarden SIP Asin</h3>
-              <p>Sehat lezat dan Bergizi</p>
+        <!-- Produk 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="produk.html#p2" class="text-decoration-none">
+            <div class="card product-card shadow-sm">
+              <img src="sarden_saos_tomat.png" alt="Sarden Asin" class="card-img-top">
+              <div class="card-body text-center">
+                <span class="badge bg-primary mb-2">Produk Unggulan</span>
+                <h3 class="card-title">Sarden SIP Asin</h3>
+                <p class="card-text text-muted">Sehat, lezat, dan bergizi</p>
+                <small class="text-muted"><strong>425gr</strong></small>
+              </div>
             </div>
           </a>
+        </div>
 
-          <!-- Produk 3 -->
-          <a href="produk.html#p3" class="product-card-link">
-            <div class="product-card">
-              <img src="/sarden_saos_tomat.png" alt="Sarden Saus Cabai"> <!-- FIXED -->
-              <h3>Sarden SIP Saus Cabai</h3>
-              <p>Sehat lezat dan Bergizi</p>
+        <!-- Produk 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="produk.html#p3" class="text-decoration-none">
+            <div class="card product-card shadow-sm">
+              <img src="sarden_saos_tomat.png" alt="Sarden Saus Cabai" class="card-img-top">
+              <div class="card-body text-center">
+                <span class="badge bg-primary mb-2">Produk Unggulan</span>
+                <h3 class="card-title">Sarden SIP Saus Cabai</h3>
+                <p class="card-text text-muted">Sehat, lezat, dan bergizi</p>
+                <small class="text-muted"><strong>425gr</strong></small>
+              </div>
             </div>
           </a>
         </div>
       </div>
     </div>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- FIXED -->
-          <img src="/Logosip.png" alt="Logo 2"> <!-- FIXED -->
-          <img src="/Logotefa.png" alt="Logo 3"> <!-- FIXED -->
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-custom">
+    <!-- Logo + Nama -->
+    <div class="row align-items-center mb-4">
+      <div class="col-auto d-flex align-items-center gap-3">
+        <img src="logopolije.png" alt="Logo Polije" height="50">
+        <img src="Logosip.png" alt="Logo SIP" height="50">
+        <img src="Logotefa.png" alt="Logo TEFA" height="50">
       </div>
-      <div class="footer-menu">
-        <div class="footer-menu-column">
-          <h4>Alamat</h4>
-          <p>Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>Lingkungan Panji, Tegalgede,<br>Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124<br>Politeknik Negeri Jember</p>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Tentang kami</h4>
-          <a href="tentang.html">Sejarah</a>
-          <a href="tentang.html">Visi misi</a>
-          <a href="tentang.html">Tentang Sarden</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Produk Kami</h4>
-          <a href="produk.html">Detail produk</a>
-          <a href="informasi.html">Informasi keamanan produk</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Proses pembuatan</h4>
-          <a href="tahapan.html">Tahapan</a>
-          <a href="alat.html">Alat alat</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Berita</h4>
-          <a href="kegiatan.html">Kegiatan</a>
-          <a href="inovasi.html">Inovasi</a>
-          <a href="pencapaian.html">Pencapaian</a>
-        </div>
-        <div class="footer-menu-column">
-          <h4>Kontak</h4>
-          <a href="kontak.html">Hubungi Kami</a>
+      <div class="col-auto">
+        <span style="font-weight: 600; font-size: 1.1rem; color: white;">Tefa Pengalengan Ikan</span>
+      </div>
+    </div>
+
+    <!-- Menu Footer -->
+    <div class="row text-white">
+      <!-- Alamat -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Alamat</h5>
+        <p class="small" style="color: white; line-height: 1.6;">
+          Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>
+          Lingkungan Panji, Tegalgede,<br>
+          Kec. Sumbersari, Kabupaten Jember,<br>
+          Jawa Timur 68124<br>
+          Politeknik Negeri Jember
+        </p>
+      </div>
+
+      <!-- Tentang Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Tentang kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tentang.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Sejarah</a></li>
+          <li><a href="tentang.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Visi misi</a></li>
+          <li><a href="tentang.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Tentang Sarden</a></li>
+          <li class="mt-2"><a href="kontak.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Produk Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Produk Kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="produk.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Detail produk</a></li>
+          <li><a href="informasi.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Informasi keamanan produk</a></li>
+        </ul>
+      </div>
+
+      <!-- Proses Pembuatan -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Proses pembuatan</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tahapan.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Tahapan</a></li>
+          <li><a href="alat.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Alat alat</a></li>
+        </ul>
+      </div>
+
+      <!-- Berita & Kontak -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="row">
+          <div class="col-6">
+            <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Berita</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kegiatan.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Kegiatan</a></li>
+              <li><a href="inovasi.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Inovasi</a></li>
+              <li><a href="pencapaian.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Pencapaian</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 style="color: white; font-weight: bold; margin-bottom: 1rem;">Kontak</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kontak.html" style="color: white; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
+
+    <!-- Tagline -->
+    <div class="text-center">
+      <h4 style="color: white; font-family: 'Brush Script MT', cursive, sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Smart, Innovative, Professional
+      </h4>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const hash = window.location.hash.substring(1);
-    if (hash && produkData[hash]) {
-      showDetail(hash);
-    }
-  });
-</script>
-
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

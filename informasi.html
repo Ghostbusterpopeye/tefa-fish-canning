@@ -1,171 +1,364 @@
+alat.html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produk Kami - TEFA Pengalengan Ikan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css"> <!-- FIXED -->
-  <link rel="stylesheet" href="/style_produk.css"> <!-- FIXED -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informasi Keamanan Produk - TEFA Pengalengan Ikan</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Global Kustom -->
+  <link rel="stylesheet" href="style-global.css" />
 </head>
+<body>
 
-<body> <!-- TAMBAH tag <body> yang hilang -->
-  <header>
-    <div class="logo">
-      <img src="/Logotefa.png" alt="Logo TEFA"> <!-- FIXED -->
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">BERANDA</a></li>
-        <li><a href="tentang.html">TENTANG KAMI</a></li>
-        <li class="dropdown">
-          <a href="produk.html" class="active">PRODUK KAMI</a>
-          <div class="dropdown-content">
-            <a href="produk.html">Detail Produk</a>
-            <a href="informasi.html" class="active">Informasi Keamanan</a>
-          </div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logotefa.png" alt="Logo TEFA" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">BERANDA</a>
         </li>
-        <li class="dropdown">
-          <a href="tahapan.html">PROSES PEMBUATAN</a>
-          <div class="dropdown-content">
-            <a href="tahapan.html">Tahapan</a>
-            <a href="alat.html">Alat-Alat</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
         </li>
-        <li class="dropdown">
-          <a href="berita.html">BERITA</a>
-          <div class="dropdown-content">
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="inovasi.html">Inovasi</a>
-            <a href="pencapaian.html">Pencapaian</a>
-          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="produk.html" role="button" data-bs-toggle="dropdown">
+            PRODUK KAMI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produk.html">Detail Produk</a></li>
+            <li><a class="dropdown-item active" href="informasi.html">Informasi Keamanan</a></li>
+          </ul>
         </li>
-        <li><a href="kontak.html">KONTAK</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="tahapan.html" role="button" data-bs-toggle="dropdown">
+            PROSES PEMBUATAN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tahapan.html">Tahapan</a></li>
+            <li><a class="dropdown-item" href="alat.html">Alat-Alat</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kegiatan.html" role="button" data-bs-toggle="dropdown">
+            BERITA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kegiatan.html">Kegiatan</a></li>
+            <li><a class="dropdown-item" href="inovasi.html">Inovasi</a></li>
+            <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">KONTAK</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+</nav>
 
-  <main>
-    <div class="container">
+  <!-- MAIN CONTENT -->
+  <main class="py-5">
+    <div class="container-custom">
       <h1 class="page-title">Informasi Keamanan Produk</h1>
 
-      <div class="news-nav">
-        <a href="produk.html" class="news-nav-item">
-          <i class="fas fa-box"></i> Detail Produk
-        </a>
-        <a href="informasi.html" class="news-nav-item active">
-          <i class="fas fa-shield-alt"></i> Informasi Keamanan
-        </a>
-      </div>
+<!-- SUB NAVBAR INFORMASI -->
+<div class="d-flex flex-wrap justify-content-center align-items-center mt-4 mb-5 gap-3">
+  <a href="produk.html" class="btn btn-outline-primary d-flex align-items-center">
+    <i class="fas fa-box me-2"></i> Detail Produk
+  </a>
+  <a href="informasi.html" class="btn btn-primary d-flex align-items-center">
+    <i class="fas fa-shield-alt me-2"></i> Informasi Keamanan
+  </a>
+</div>
 
-      <section id="informasi-list" class="news-section active">
-        <div class="news-grid">
-          <div class="news-item" onclick="showDetail('s1')">
-            <div class="news-image">
-              <img src="/sertifikat_sni.jpg" alt="Sertifikat SNI"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
-              <h3 class="news-title">SNI 3223:2022</h3>
-              <p class="news-summary">Standar Nasional Indonesia untuk sarden dan makarel.</p>
-              <div class="news-date">Berlaku 2022–2027</div>
-            </div>
-          </div>
-          <div class="news-item" onclick="showDetail('s2')">
-            <div class="news-image">
-              <img src="/SERTIFIKASI.jpg" alt="Sertifikat Halal"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
-              <h3 class="news-title">Sertifikat Halal MUI</h3>
-              <p class="news-summary">Produk aman dikonsumsi umat Muslim.</p>
-              <div class="news-date">Berlaku hingga 2026</div>
+      <!-- Daftar Sertifikasi -->
+      <section id="informasi-list" class="active">
+        <div class="row g-4">
+          <!-- Sertifikasi 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('s1')" style="cursor: pointer;">
+              <img src="sertifikat_sni.jpg" class="card-img-top" alt="Sertifikat SNI" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Sertifikasi</span>
+                <h5 class="card-title text-red">SNI 3223:2022</h5>
+                <p class="card-text flex-grow-1">Standar Nasional Indonesia untuk sarden dan makarel.</p>
+                <small class="text-muted">Berlaku 2022–2027</small>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('s3')">
-            <div class="news-image">
-              <img src="/sertifikat_haccp.jpg" alt="Sertifikat HACCP"> <!-- FIXED -->
-            </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
-              <h3 class="news-title">HACCP</h3>
-              <p class="news-summary">Sistem jaminan keamanan pangan internasional.</p>
-              <div class="news-date">Berlaku 2023–2026</div>
+
+          <!-- Sertifikasi 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('s2')" style="cursor: pointer;">
+              <img src="SERTIFIKASI.jpg" class="card-img-top" alt="Sertifikat Halal" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Sertifikasi</span>
+                <h5 class="card-title text-red">Sertifikat Halal MUI</h5>
+                <p class="card-text flex-grow-1">Produk aman dikonsumsi umat Muslim.</p>
+                <small class="text-muted">Berlaku hingga 2026</small>
+              </div>
             </div>
           </div>
-          <div class="news-item" onclick="showDetail('s4')">
-            <div class="news-image">
-              <img src="/sertifikat_skp.jpg" alt="SKP"> <!-- FIXED -->
+
+          <!-- Sertifikasi 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('s3')" style="cursor: pointer;">
+              <img src="sertifikat_haccp.jpg" class="card-img-top" alt="Sertifikat HACCP" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Sertifikasi</span>
+                <h5 class="card-title text-red">HACCP</h5>
+                <p class="card-text flex-grow-1">Sistem jaminan keamanan pangan internasional.</p>
+                <small class="text-muted">Berlaku 2023–2026</small>
+              </div>
             </div>
-            <div class="news-content">
-              <div class="news-categories"><span class="category-tag">Sertifikasi</span></div>
-              <h3 class="news-title">SKP (Surat Kelayakan Produksi)</h3>
-              <p class="news-summary">Izin resmi dari Kementerian Kelautan dan Perikanan.</p>
-              <div class="news-date">Berlaku hingga 2026</div>
+          </div>
+
+          <!-- Sertifikasi 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm" onclick="showDetail('s4')" style="cursor: pointer;">
+              <img src="sertifikat_skp.jpg" class="card-img-top" alt="SKP" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">Sertifikasi</span>
+                <h5 class="card-title text-red">SKP (Surat Kelayakan Produksi)</h5>
+                <p class="card-text flex-grow-1">Izin resmi dari Kementerian Kelautan dan Perikanan.</p>
+                <small class="text-muted">Berlaku hingga 2026</small>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="detail-informasi" class="news-section">
-        <div class="berita-detail">
-          <h2 id="detail-title" class="page-title">Judul Sertifikasi</h2>
-          <div class="meta" id="detail-meta">Masa Berlaku: | Kategori: Sertifikasi</div>
-          <img id="detail-image" src="" alt="Gambar Sertifikasi">
-          <div class="content" id="detail-content"></div>
-          <a href="#" class="btn-kembali" onclick="hideDetail(); return false;">
-            <i class="fas fa-arrow-left"></i> Kembali ke Informasi
-          </a>
+      <!-- Detail Informasi -->
+      <section id="detail-informasi" class="mt-5" style="display: none;">
+        <div class="card shadow-red">
+          <div class="card-body p-4">
+            <h2 id="detail-title" class="card-title text-center mb-3 text-red">Judul Sertifikasi</h2>
+            <div class="text-muted text-center mb-4" id="detail-meta">Masa Berlaku: | Kategori: Sertifikasi</div>
+            <img id="detail-image" src="" alt="Gambar Sertifikasi" class="img-fluid rounded mb-4">
+            <div id="detail-content" class="mb-4"></div>
+            <div class="text-center">
+              <a href="#" class="btn btn-secondary btn-lg" onclick="hideDetail(); return false;">
+                <i class="fas fa-arrow-left me-2"></i> Kembali ke Informasi
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <!-- Footer content sama seperti file lainnya -->
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div class="footer-logos">
-          <img src="/logopolije.png" alt="Logo 1"> <!-- JANGAN LUPA / DI SINI JUGA -->
-          <img src="/Logosip.png" alt="Logo 2">
-          <img src="/Logotefa.png" alt="Logo 3">
-        </div>
-        <span class="footer-text">Tefa Pengalengan Ikan</span>
+ <!-- FOOTER -->
+<footer>
+  <div class="container-custom">
+    <!-- Logo + Nama - Sejajar Horizontal -->
+    <div class="row align-items-center mb-4">
+      <div class="col-auto d-flex align-items-center gap-3">
+        <img src="logopolije.png" alt="Logo Polije" height="50">
+        <img src="Logosip.png" alt="Logo SIP" height="50">
+        <img src="Logotefa.png" alt="Logo TEFA" height="50">
       </div>
-      <!-- sisanya sama -->
+      <div class="col-auto">
+        <span style="font-weight: 600; font-size: 1.1rem; color: white;">Tefa Pengalengan Ikan</span>
+      </div>
     </div>
-    <div class="footer-bottom">
-      <h3>Smart, Innovative, Professional</h3>
-    </div>
-  </footer>
 
+    <!-- Menu Footer -->
+    <div class="row text-white">
+      <!-- Kolom 1: Alamat -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Alamat</h5>
+        <p class="small" style="color: white !important; line-height: 1.6;">
+          Alamat RPVG+PQJ, Jl. Tawang Mangu,<br>
+          Lingkungan Panji, Tegalgede,<br>
+          Kec. Sumbersari, Kabupaten Jember,<br>
+          Jawa Timur 68124<br>
+          Politeknik Negeri Jember
+        </p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Tentang kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Sejarah</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Visi misi</a></li>
+          <li><a href="tentang.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tentang Sarden</a></li>
+          <li class="mt-2"><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Produk Kami -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Produk Kami</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="produk.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Detail produk</a></li>
+          <li><a href="informasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Informasi keamanan produk</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Proses Pembuatan -->
+      <div class="col-12 col-md-2 mb-4">
+        <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Proses pembuatan</h5>
+        <ul class="list-unstyled" style="padding-left: 0;">
+          <li><a href="tahapan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Tahapan</a></li>
+          <li><a href="alat.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Alat alat</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 5: Berita & Kontak -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="row">
+          <!-- Sub-Kolom 1: Berita -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Berita</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kegiatan.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Kegiatan</a></li>
+              <li><a href="inovasi.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Inovasi</a></li>
+              <li><a href="pencapaian.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Pencapaian</a></li>
+            </ul>
+          </div>
+          <!-- Sub-Kolom 2: Kontak -->
+          <div class="col-6">
+            <h5 style="color: white !important; font-weight: bold; margin-bottom: 1rem;">Kontak</h5>
+            <ul class="list-unstyled" style="padding-left: 0;">
+              <li><a href="kontak.html" style="color: white !important; text-decoration: none; font-size: 0.9rem;">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class="text-center">
+      <h4 style="color: white !important; font-family: 'Brush Script MT', cursive, sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Smart, Innovative, Professional
+      </h4>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript Interaktif -->
   <script>
     const informasiData = {
       s1: {
         title: "SNI 3223:2022",
         validity: "2022–2027",
-        image: "/sertifikat_sni.jpg", // FIXED
-        content: `<p>Standar Nasional Indonesia (SNI) 3223:2022 mengatur persyaratan mutu, keamanan, dan pengemasan produk sarden dan makarel kaleng.</p><p>Produk TEFA telah melalui uji laboratorium dan audit produksi untuk memenuhi standar ini, menjamin kualitas yang konsisten dan aman untuk konsumen.</p>`
+        image: "sertifikat_sni.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-certificate me-2"></i>Tentang SNI 3223:2022</h4>
+          <p style="text-align: justify; line-height: 1.8;">Standar Nasional Indonesia (SNI) 3223:2022 mengatur persyaratan mutu, keamanan, dan pengemasan produk sarden dan makarel kaleng. Produk TEFA telah melalui uji laboratorium dan audit produksi untuk memenuhi standar ini, menjamin kualitas yang konsisten dan aman untuk konsumen.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-clipboard-list me-2"></i>Persyaratan Utama</h5>
+          <ul>
+            <li>Kadar protein minimal 16%</li>
+            <li>Kadar air maksimal 75%</li>
+            <li>Berat isi minimal 425g</li>
+            <li>Bebas dari bahan berbahaya</li>
+            <li>Sterilisasi komersial (F0 > 3)</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-check-circle me-2"></i>Manfaat Sertifikasi</h5>
+          <ul>
+            <li>Jaminan kualitas produk</li>
+            <li>Kepercayaan konsumen meningkat</li>
+            <li>Memenuhi regulasi pemerintah</li>
+            <li>Akses pasar lebih luas</li>
+          </ul>
+        `
       },
       s2: {
         title: "Sertifikat Halal MUI",
         validity: "Hingga 2026",
-        image: "/SERTIFIKASI.jpg", // FIXED
-        content: `<p>Sertifikat Halal dikeluarkan oleh Majelis Ulama Indonesia (MUI) setelah audit menyeluruh terhadap bahan baku, proses produksi, dan sanitasi.</p><p>Produk TEFA bebas dari kontaminasi bahan non-halal dan memenuhi syariah Islam.</p>`
+        image: "SERTIFIKASI.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-mosque me-2"></i>Tentang Sertifikasi Halal</h4>
+          <p style="text-align: justify; line-height: 1.8;">Sertifikat Halal dikeluarkan oleh Majelis Ulama Indonesia (MUI) setelah audit menyeluruh terhadap bahan baku, proses produksi, dan sanitasi. Produk TEFA bebas dari kontaminasi bahan non-halal dan memenuhi syariah Islam.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-list-check me-2"></i>Aspek yang Diaudit</h5>
+          <ul>
+            <li>Bahan baku: 100% halal</li>
+            <li>Proses produksi: Terpisah dari non-halal</li>
+            <li>Sanitasi dan kebersihan</li>
+            <li>Penyimpanan dan distribusi</li>
+            <li>Sistem jaminan halal internal</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-star me-2"></i>Keunggulan Produk Halal</h5>
+          <ul>
+            <li>Aman untuk umat Muslim</li>
+            <li>Proses higienis dan bersih</li>
+            <li>Bahan berkualitas tinggi</li>
+            <li>Akses pasar internasional</li>
+          </ul>
+        `
       },
       s3: {
         title: "HACCP",
         validity: "2023–2026",
-        image: "/sertifikat_haccp.jpg", // FIXED
-        content: `<p>Hazard Analysis Critical Control Point (HACCP) adalah sistem jaminan keamanan pangan internasional yang mengidentifikasi dan mengendalikan titik kritis dalam proses produksi.</p><p>Implementasi HACCP di TEFA memastikan produk aman dari bahaya biologis, kimia, dan fisik.</p>`
+        image: "sertifikat_haccp.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-shield-virus me-2"></i>Tentang HACCP</h4>
+          <p style="text-align: justify; line-height: 1.8;">Hazard Analysis Critical Control Point (HACCP) adalah sistem jaminan keamanan pangan internasional yang mengidentifikasi dan mengendalikan titik kritis dalam proses produksi. Implementasi HACCP di TEFA memastikan produk aman dari bahaya biologis, kimia, dan fisik.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-network-wired me-2"></i>7 Prinsip HACCP</h5>
+          <ol>
+            <li>Analisis bahaya (hazard analysis)</li>
+            <li>Identifikasi CCP (Critical Control Points)</li>
+            <li>Menetapkan batas kritis</li>
+            <li>Sistem monitoring CCP</li>
+            <li>Tindakan koreksi</li>
+            <li>Prosedur verifikasi</li>
+            <li>Dokumentasi dan pencatatan</li>
+          </ol>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-microscope me-2"></i>Titik Kontrol Kritis</h5>
+          <ul>
+            <li>Penerimaan bahan baku</li>
+            <li>Proses sterilisasi (retorting)</li>
+            <li>Penutupan kaleng (seaming)</li>
+            <li>Cooling dan penyimpanan</li>
+          </ul>
+        `
       },
       s4: {
         title: "SKP (Surat Kelayakan Produksi)",
         validity: "Hingga 2026",
-        image: "/sertifikat_skp.jpg", // FIXED
-        content: `<p>Surat Kelayakan Produksi (SKP) diterbitkan oleh UPT PMP2KP Kementerian Kelautan dan Perikanan RI.</p><p>Dokumen ini membuktikan bahwa fasilitas, peralatan, dan SDM TEFA memenuhi standar produksi pangan olahan perikanan.</p>`
+        image: "sertifikat_skp.jpg",
+        content: `
+          <h4 class="text-red mb-3"><i class="fas fa-file-contract me-2"></i>Tentang SKP</h4>
+          <p style="text-align: justify; line-height: 1.8;">Surat Kelayakan Produksi (SKP) diterbitkan oleh UPT PMP2KP Kementerian Kelautan dan Perikanan RI. Dokumen ini membuktikan bahwa fasilitas, peralatan, dan SDM TEFA memenuhi standar produksi pangan olahan perikanan.</p>
+          
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-building me-2"></i>Persyaratan SKP</h5>
+          <ul>
+            <li>Fasilitas produksi memadai</li>
+            <li>Peralatan sesuai standar</li>
+            <li>SDM kompeten dan terlatih</li>
+            <li>Sistem sanitasi baik</li>
+            <li>Sistem jaminan mutu terdokumentasi</li>
+          </ul>
+
+          <h5 class="text-red mt-4 mb-3"><i class="fas fa-check-double me-2"></i>Cakupan SKP</h5>
+          <ul>
+            <li>Izin produksi resmi</li>
+            <li>Nomor registrasi produk</li>
+            <li>Label dan kemasan</li>
+            <li>Distribusi dan penjualan</li>
+            <li>Eksport (jika diperlukan)</li>
+          </ul>
+        `
       }
     };
 
@@ -178,16 +371,19 @@
       document.getElementById('detail-image').src = data.image;
       document.getElementById('detail-content').innerHTML = data.content;
       
-      document.getElementById('informasi-list').classList.remove('active');
-      document.getElementById('detail-informasi').classList.add('active');
+      document.getElementById('informasi-list').style.display = 'none';
+      document.getElementById('detail-informasi').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function hideDetail() {
-      document.getElementById('detail-informasi').classList.remove('active');
-      document.getElementById('informasi-list').classList.add('active');
+      document.getElementById('detail-informasi').style.display = 'none';
+      document.getElementById('informasi-list').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
