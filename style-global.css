@@ -1,3 +1,4 @@
+produk.html
 :root {
   --primary-red: #B31011;
   --secondary-yellow: #ffcc00;
@@ -21,9 +22,6 @@ body {
   padding: 0 15px;
 }
 
-/* ===================================
-   NAVBAR STYLING
-   =================================== */
 
 .navbar {
   background-color: var(--primary-red) !important;
@@ -76,7 +74,6 @@ body {
   color: var(--secondary-yellow) !important;
 }
 
-/* Dropdown Styling */
 .dropdown-menu {
   background-color: #d12f20 !important;
   border: none !important;
@@ -101,10 +98,6 @@ body {
   color: var(--secondary-yellow) !important;
   padding-left: 2rem !important;
 }
-
-/* ===================================
-   FOOTER STYLING
-   =================================== */
 
 footer {
   background-color: var(--primary-red) !important;
@@ -157,11 +150,9 @@ footer li {
   margin-bottom: 1rem;
 }
 
-/* HAPUS FILTER PUTIH DARI LOGO */
 .footer-logos img {
   height: 50px;
   width: auto;
-  /* filter: brightness(0) invert(1); DIHAPUS */
 }
 
 .footer-bottom {
@@ -186,61 +177,55 @@ hr.footer-divider {
   margin: 2rem 0 !important;
 }
 
-/* ===================================
-   CONTENT STYLING
-   =================================== */
-
 .page-title {
-  color: var(--primary-red) !important;
-  font-weight: 700 !important;
-  font-size: 2.2rem !important;
-  text-align: center !important;
-  margin: 2rem 0 2.5rem !important;
+  color: var(--primary-red);
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem 0 2.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .section-title {
-  color: var(--primary-red) !important;
-  font-weight: 600 !important;
-  margin-bottom: 1.5rem !important;
+  color: var(--primary-red);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-/* Card Styling */
 .card {
-  border: none !important;
-  border-radius: 12px !important;
-  transition: all 0.3s ease !important;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 8px 20px rgba(179, 16, 17, 0.15) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(179, 16, 17, 0.15);
 }
 
 .card-img-top {
-  border-top-left-radius: 12px !important;
-  border-top-right-radius: 12px !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .card-title {
-  color: #333 !important;
-  font-weight: 600 !important;
-  margin-bottom: 0.75rem !important;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
 .card-text {
-  color: #666 !important;
-  line-height: 1.6 !important;
+  color: #666;
+  line-height: 1.6;
 }
 
-/* Badge Styling */
 .badge {
-  padding: 0.4rem 0.8rem !important;
-  font-weight: 600 !important;
-  font-size: 0.75rem !important;
-  border-radius: 6px !important;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 6px;
 }
 
 .badge.bg-primary {
@@ -265,7 +250,6 @@ hr.footer-divider {
   color: white !important;
 }
 
-/* Button Styling */
 .btn {
   border-radius: 8px !important;
   padding: 0.5rem 1.5rem !important;
@@ -308,22 +292,21 @@ hr.footer-divider {
   color: white !important;
 }
 
-/* Navigation Pills */
 .nav-pills .nav-link {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 0.6rem 1.5rem !important;
+  padding: 0.6rem 1.5rem;
   border: 1px solid transparent;
-  border-radius: 8px !important;
+  border-radius: 8px;
   transition: all 0.3s ease;
-  color: #666 !important;
-  font-weight: 600 !important;
+  color: #666;
+  font-weight: 600;
 }
 
 .nav-pills .nav-link:hover {
-  background-color: #f8f9fa !important;
-  color: var(--primary-red) !important;
+  background-color: #f8f9fa;
+  color: var(--primary-red);
 }
 
 .nav-pills .nav-link.active {
@@ -332,243 +315,186 @@ hr.footer-divider {
   border-color: var(--primary-red) !important;
 }
 
-/* ===================================
-   TENTANG KAMI - KOTAK KOTAK STYLING
-   =================================== */
+
+.row.mt-5.mb-5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.mt-5.mb-5 > [class*='col-'] {
+  display: flex;
+}
+
 .visi-box {
-  background-color: #fff !important;
-  border: 1px solid #ddd !important;
-  border-radius: 8px !important;
-  padding: 1.5rem !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
-  min-height: 180px;
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .misi-box {
-  background-color: #f04444 !important;
-  color: #f04444 !important;
-  border: 1px solid #d12f20 !important;
-  border-radius: 8px !important;
-  padding: 1.5rem !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
-  min-height: 180px;
+  flex: 1;
+  background-color: var(--primary-red);
+  color: white;
+  border: 1px solid #d12f20;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .box {
-  background-color: #fff !important;
-  border: 1px solid #ddd !important;
-  border-radius: 8px !important;
-  padding: 1.5rem !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
   text-align: center;
 }
 
-/* Hover effect */
 .visi-box:hover,
 .misi-box:hover,
 .box:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Judul di dalam kotak */
 .visi-box h3,
-.misi-box h3,
 .box h4 {
-  color: var(--primary-red) !important;
-  margin-bottom: 0.5rem !important;
-  font-weight: 600 !important;
-  border-bottom: 2px solid var(--primary-red);
-  padding-bottom: 0.5rem;
+  color: var(--primary-red);
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-/* Teks di dalam misi-box harus putih */
+.misi-box h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .misi-box p,
 .misi-box ol {
-  color: white !important;
+  color: white;
   text-align: left;
   line-height: 1.6;
 }
 
 .misi-box ol {
-  padding-left: 1.5rem !important;
+  padding-left: 1.5rem;
   margin: 0.5rem 0;
 }
 
 .misi-box li {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
 }
 
-/* Teks di dalam box (staff) rata tengah */
 .box p {
-  text-align: center !important;
-  margin: 0 !important;
+  text-align: center;
+  margin: 0;
 }
 
 .box h4 {
-  text-align: center !important;
-  margin-bottom: 0.5rem !important;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-/* Paragraf di Visi rata kiri-kanan */
 .visi-box p {
   text-align: justify;
   line-height: 1.6;
 }
-/* ===================================
-   RESPONSIVE DESIGN
-   =================================== */
+
+
+.contact-info-wrapper {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-heading {
+  color: var(--primary-red);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-text {
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-text strong {
+  color: var(--primary-red);
+  font-weight: 600;
+}
+
+.map-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.map-heading {
+  color: var(--primary-red);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.map-caption {
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
 
 @media (max-width: 991px) {
-  .navbar-nav {
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  .navbar-nav .nav-link,
-  .navbar-nav .dropdown-toggle {
-    padding: 0.75rem 1rem !important;
-  }
-  
-  .dropdown-menu {
-    text-align: center !important;
-  }
-  
-  .dropdown-item {
-    text-align: center !important;
-  }
-  
-  /* Footer responsive */
-  footer .row > div {
-    margin-bottom: 2rem;
-  }
-  
-  .footer-logos {
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-title {
-    font-size: 1.8rem !important;
-  }
-  
-  .footer-bottom h4 {
-    font-size: 1.5rem !important;
-  }
-  
-  .navbar-brand img {
-    height: 40px !important;
-  }
-  
-  footer {
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .page-title {
-    font-size: 1.5rem !important;
-  }
-  
-  .footer-bottom h4 {
-    font-size: 1.3rem !important;
-  }
-  
-  .navbar-brand img {
-    height: 35px !important;
-  }
-  
-  .btn {
-    font-size: 0.85rem !important;
-    padding: 0.4rem 1rem !important;
-  }
-  
-  .visi-box, .misi-box, .box {
-    padding: 1.2rem !important;
-  }
-}
-
-/* ===================================
-   UTILITY CLASSES
-   =================================== */
-
-.text-red {
-  color: var(--primary-red) !important;
-}
-
-.bg-red {
-  background-color: var(--primary-red) !important;
-}
-
-.border-red {
-  border-color: var(--primary-red) !important;
-}
-
-.shadow-red {
-  box-shadow: 0 4px 12px rgba(179, 16, 17, 0.15) !important;
-}
-
-/* Animasi Fade In */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-   /* HAPUS FILTER PUTIH DARI LOGO */
-   .footer-logos img {
-     height: 50px;
-     width: auto;
-     /* filter: brightness(0) invert(1); DIHAPUS */
-   }
-   
-   /* TENTANG KAMI - KOTAK KOTAK STYLING */
-   .visi-box, 
-   .misi-box, 
-   .box {
-     background-color: #f8f9fa !important;
-     border: 1px solid #e9ecef !important;
-     border-radius: 8px !important;
-     padding: 1.5rem !important;
-     box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-     transition: all 0.3s ease !important;
-   }
-   
-   .visi-box:hover, 
-   .misi-box:hover, 
-   .box:hover {
-     transform: translateY(-3px) !important;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-   }
-   
-   .badge.bg-danger {
-     background-color: var(--primary-red) !important;
-     color: white !important;
-   }            
-
-@media (max-width: 991px) {
-  /* Sidebar styling */
   .navbar-collapse {
     position: fixed;
     top: 0;
@@ -617,7 +543,6 @@ html {
     color: var(--primary-red) !important;
   }
 
-  /* Dropdown styling in mobile */
   .dropdown-menu {
     position: static !important;
     float: none !important;
@@ -646,7 +571,6 @@ html {
     color: var(--primary-red) !important;
   }
 
-  /* Dropdown arrow */
   .dropdown-toggle::after {
     content: "▼";
     font-size: 0.7rem;
@@ -659,7 +583,6 @@ html {
     transform: rotate(180deg);
   }
 
-  /* Ensure dropdowns don't inherit red color */
   .navbar-nav .dropdown-toggle::after {
     color: #666 !important;
   }
@@ -667,5 +590,122 @@ html {
   .navbar-nav .dropdown-toggle[aria-expanded="true"]::after {
     color: var(--primary-red) !important;
   }
+  
+  footer .row > div {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logos {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
 }
-                    
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .footer-bottom h4 {
+    font-size: 1.5rem !important;
+  }
+  
+  .navbar-brand img {
+    height: 40px !important;
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+  .contact-info-wrapper {
+    padding: 1.5rem;
+  }
+
+  .map-wrapper {
+    padding: 1rem;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .footer-bottom h4 {
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar-brand img {
+    height: 35px !important;
+  }
+  
+  .btn {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 1rem !important;
+  }
+  
+  .visi-box, .misi-box, .box {
+    padding: 1.2rem;
+  }
+
+  .contact-heading {
+    font-size: 1rem;
+  }
+
+  .contact-text {
+    font-size: 0.9rem;
+  }
+
+  .map-heading {
+    font-size: 1rem;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+
+.text-red {
+  color: var(--primary-red);
+}
+
+.bg-red {
+  background-color: var(--primary-red);
+}
+
+.border-red {
+  border-color: var(--primary-red);
+}
+
+.shadow-red {
+  box-shadow: 0 4px 12px rgba(179, 16, 17, 0.15);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
